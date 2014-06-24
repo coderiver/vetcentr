@@ -185,6 +185,7 @@ a
 	text-decoration: none
 	&:hover
 		background: #419df9
+		color: #fff
 	&:before
 		content: ""
 		position: absolute
@@ -572,5 +573,70 @@ a
 				color: #fe7c00
 // footer
 .footer
-	height: 243px					 	
-		 		
+	height: 243px
+.footer__topper
+	height: 80px
+	margin-bottom: 40px
+	border-top: 1px solid #e2f1ff 
+	background: #f7fbff
+	+box-shadow(0 12px 35px -4px #87a5c3)
+.copyrights
+	float: left
+	width: 178px
+	line-height: 80px
+.designedby
+	float: right
+	width: 178px
+	height: 80px
+	&:before
+		content: ""
+		display: inline-block
+		width: 0
+		height: 100%
+		vertical-align: middle  
+.footer__nav
+	overflow: hidden
+	text-align: center
+	padding-top: 23px
+.flexmedia
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	width: 106px
+	height: 30px			
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+s(flexmedia)
+		+tr(opacity 200ms)
+		z-index: 1
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+s(flexmedia-h)
+		+opacity(0)
+		+tr(opacity 200ms)
+		z-index: 2
+	&:hover
+		&:before
+			+opacity(0)
+		&:after
+			+opacity(1)
+.footer__inner
+	position: relative
+	height: 122px			
+.footer__logo
+	float: left
+	margin-right: 135px
+.footer__adress
+	float: left
+	.m-adress
+		margin-right: 40px
+.footer__up
+	position: absolute
+	bottom: 0px
+	right: 45px				
