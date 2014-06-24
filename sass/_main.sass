@@ -1,2 +1,39 @@
 // Normally mainpage styles
- 
+.catalog
+	position: relative
+	margin-bottom: 30px
+.catalog__bg
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+.catalog__inner
+	position: relative
+	width: 766px
+	margin: 0 auto
+.catalog__title
+	margin-bottom: 40px
+	text-align: center
+	font-size: 24px
+	color: #006db2
+	+direct-scb
+	font-weight: bold // remove
+.catalog__tabs
+	position: relative
+	border-radius: 20px
+	padding: 55px 50px 30px 
+	background: #f8fcff 
+	+background-image(linear-gradient(top, #fff 0%, #f1f9ff 100%))
+	+box-shadow(0px 25px 37px -15px #94aec4)
+.catalog__tabs-nav
+	position: absolute
+	top: -20px
+	left: 0
+	right: 0
+	text-align: center
+	ul
+		+clr
+		display: inline-block
+		li
+			float: left
