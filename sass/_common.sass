@@ -83,6 +83,7 @@ a
 		position: relative
 		z-index: 2
 	&:hover
+		color: #fff
 		background: #f5c600		
 		+background-image(linear-gradient(top, #fcec00 0%, #ea9000 100%))
 		&:before
@@ -402,8 +403,9 @@ a
 .nav
 	position: relative
 	height: 75px
-	padding: 11px 4px
-	background: #f9fafc
+	padding: 11px 4px 13px
+	margin: 0 -20px 
+	background: #f7f8fb
 	+g(#fff, #f3f5f9)
 	+box-shadow(0 16px 19px -5px #96acc4)
 .nav__bot
@@ -413,7 +415,6 @@ a
 	right: 6px
 	height: 5px
 	background: #e1e6eb
-	
 	&:before
 		content: ""
 		position: absolute
@@ -428,7 +429,8 @@ a
 		+arr(6, 5, #e1e6eb, tl)	 
 .nav__top
 	+clr
-	padding: 0 20px 
+	padding: 0 20px 5px
+	background: url(../img/border.png) 0 100% repeat-x  
 .nav__left
 	+clr
 	float: left
@@ -436,9 +438,11 @@ a
 .nav__right
 	float: right
 	width: 178px
+	padding-top: 9px
 .nav__mid
 	overflow: hidden
-	text-align: center			
+	text-align: center
+	padding: 5px 0 9px 			
 .lang
 	float: left
 	margin-right: 19px
@@ -482,7 +486,6 @@ a
 	font-size: 14px
 	text-decoration: none
 	color: #495661
-	color: #485561
 	+text-shadow(0 1px 0 #fff)
 	+box-shadow(0 5px 6px -2px #a8c5d7)
 	&:before
@@ -492,11 +495,81 @@ a
 		right: 10px
 		+s(select)
 	&:hover
+		color: #495661 
 		background: #e1e8ef
 		+background-image(linear-gradient(top, #e3e9f0 0%, #e3e9f0 49%, #ecf1f5 50%, #fefefe 100%)) 	
 	&.is-open
 		+box-shadow(0 0 0 2px #ff8500)
-
+.menu
+	display: inline-block
+	font-size: 0
+	li
+		display: inline-block
+		a
+			display: block
+			height: 22px
+			padding: 5px 13px
+			border-radius: 5px
+			font-size: 16px
+			+direct-scb
+			font-weight: bold // remove
+			color: #f66a00
+			+tr(all 200ms)
+			span
+				display: inline-block
+				border-bottom: 1px solid 
+			&:hover
+				color: #fe8700
+				span
+					border-bottom-color: #fff 
+			&.is-active
+				background: #fcf4c9
+				color: #5a3e27
+				span
+					border-bottom: none 
+.search
+	position: relative
+	display: block
+	font-size: 0
+.search__field
+	display: inline-block
+	width: 100%
+	height: 26px
+	padding-left: 33px
+	padding-right: 10px
+	+box   
+	border-radius: 12px
+	background: #f2f5fa
+	+box-shadow(inset 0 1px 3px rgba(130,157,173,.75))
+	color: #182e41
+	font-size: 12px
+	+placeholder
+		color: #d96d0b
+.search__submit
+	position: absolute
+	top: 6px
+	left: 11px
+	+s(search)
+.search__reset
+	position: absolute
+	top: 8px
+	right: 8px
+	+s(reset)			
+.submenu-wrap
+	text-align: center
+	font-size: 0
+	padding-top: 12px 
+.submenu
+	display: inline-block
+	li
+		display: inline-block
+		vertical-align: middle
+		margin: 0 15px 	
+		a
+			display: block
+			font-size: 12px
+			&:hover
+				color: #fe7c00
 // footer
 .footer
 	height: 243px					 	

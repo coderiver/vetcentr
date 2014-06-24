@@ -17,6 +17,24 @@ head.ready(function() {
 		info();
 	};	
 
+// reset search input
+
+    function reset_search() {
+        var input = $(".js-search");
+        $(".js-reset").hide();
+        input.keyup(function(){
+            if ( this.value !== 0 ) {
+                $(this).parent().find('.js-reset').show();
+            };
+        });
+        $('.js-reset').on('click', function(){
+            $(this).hide();
+        });
+
+    } 
+
+    reset_search();
+
 // document click
 
 	var agent = navigator.userAgent,
