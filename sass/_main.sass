@@ -22,7 +22,7 @@
 .catalog__tabs
 	position: relative
 	border-radius: 20px
-	padding: 55px 50px 30px 
+	padding: 55px 40px 30px 
 	background: #f8fcff 
 	+background-image(linear-gradient(top, #fff 0%, #f1f9ff 100%))
 	+box-shadow(0px 25px 37px -15px #94aec4)
@@ -34,12 +34,15 @@
 	text-align: center
 .catalog__tabs-content
 	+clr
+	min-height: 300px
 .catalog__left
 	float: left
-	width: 200px
+	width: 190px
 .catalog__mid
 	float: left
-	width: 350px 
+	width: 340px
+.catalog__right
+	float: left	 
 .catalog__tabs-list
 	+clr
 	display: inline-block 
@@ -86,8 +89,6 @@
 		span
 			+text-shadow(0 1px 1px #d38d00)
 			border-bottom: 1px dotted transparent
-.catalog__item
-	
 .catalog__link
 	position: relative
 	display: inline-block
@@ -116,24 +117,40 @@
 .catalog__sublink
 	position: relative
 	display: inline-block
-	margin-bottom: 8px
-	height: 25px
-	line-height: 25px 
-	padding: 0 24px 0 10px
+	margin-bottom: 4px
+	padding: 3px 13px 3px 10px
 	border-radius: 12px
 	font-size: 12px
 	color: #006db8
 	text-decoration: none
-	&:before
-		content: ""
-		position: absolute
-		top: 8px
-		right: 8px
+	+tr(background 200ms)
+	i
+		display: inline-block
+		margin-left: 8px
 		+s(link-right-s)
 	&:hover
 		color: #fff
 		background: #e98500
-		&:before
-			+s(link-right-s-h)	
+		i
+			+s(link-right-s-h)
+.catalog__sublist
+	&.is-wide
+		+clr
+		ul
+			float: left
+			width: 160px
+.catalog__phrase
+	float: right
+	padding-top: 30px
+	width: 267px
+	height: 77px
+	background: url(../img/phrase.png) 0 0 no-repeat
+	text-align: right
+	+direct-i
+	font-size: 16px
+	color: #182e41
+	span
+		color: #8e9ca8
+		font-size: 12px   			
 		 
 
