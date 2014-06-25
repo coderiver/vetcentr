@@ -1,1 +1,75 @@
 // about page styles
+.document
+	&.document_aside
+		text-align: center
+	&.document_list
+		margin-right: -50px
+		.document__item
+			margin-right: 50px
+	.document__item
+		display: inline-block
+		width: 150px
+		margin-bottom: 40px
+		text-decoration: none
+		vertical-align: top
+		text-align: center
+	.document__title
+		margin-bottom: 25px
+		+direct-scb
+		font-size: 16px
+	.document__pic
+		margin-bottom: 17px
+		font-size: 0
+		img
+			width: 100%
+			border: 3px solid #fff
+			border-radius: 8px
+			background-color: #000
+			box-shadow: 0 2px 9px rgba(49,86,122,.67)
+	.document__link	
+		display: inline-block
+		+direct-c
+		border-bottom: 1px dotted 
+		font-size: 16px
+		line-height: 1.2
+
+.about
+	margin-bottom: 50px
+	.about__head
+		margin-bottom: 40px
+		+clr
+	.about__doctor
+		float: left
+		margin-right: 20px
+	.about__doctor-pic
+		padding-left: 15px
+		margin-bottom: 17px
+		img
+			display: block
+			border-radius: 50%
+			background-color: #fff
+			box-shadow: 0 5px 10px rgba(88,106,121,.06)
+	.about__doctor-name
+		margin-bottom: 5px
+		+direct-scb
+		font-size: 14px
+	.about__doctor-position
+		+direct-i
+		color: #919BA6 
+	.about__motto
+		padding: 20px 45px
+		border-radius: 5px
+		background: #f9f3c9
+		line-height: 1.6
+		font-weight: bold 
+		color: #54402D
+	.content
+		position: relative
+		display: table
+		padding: 10px 0 0 40px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(about-quote)

@@ -14,8 +14,9 @@
 
 .title
 	margin-bottom: 20px
+	padding-bottom: 8px
 	border-bottom: #CAD5E5 1px solid 
-	overflow: hidden
+	+clr
 	.title__link
 		float: right
 		margin-left: 20px
@@ -65,31 +66,6 @@
 					color: #fff
 					i
 						+s(aside-nav-arr-a)
-
-.document
-	text-align: center
-	&.document_aside
-		.document__item	
-			margin-bottom: 40px 
-	.document__title
-		margin-bottom: 25px
-		+direct-scb
-		font-size: 16px
-	.document__pic
-		margin-bottom: 17px
-		font-size: 0
-		img
-			border: 3px solid #fff
-			border-radius: 8px
-			background-color: #000
-			box-shadow: 0 2px 9px rgba(49,86,122,.67)
-	.document__link	
-		a
-			+direct-c
-			border-bottom: 1px dotted 
-			font-size: 16px
-			color: #3B75A8 
-			text-decoration: none
 			
 .gallery
 	position: relative
@@ -97,6 +73,10 @@
 	.gallery__prev, .gallery__next
 		position: absolute
 		top: 160px
+		opacity: .5
+		+tr(opacity .2s linear) 
+		&:hover
+			opacity: 1 
 	.gallery__prev
 		left: -25px
 		+s(gallery-prev)
@@ -136,9 +116,11 @@
 			box-shadow: 0 2px 9px rgba(49,86,122,.67)
 			border: 3px solid #fff
 			vertical-align: top
+			+tr(all .2s linear)
 			&:hover
 				background: #eb9119
 				img
+					+tr(opacity .2s linear)
 					opacity: .4
 			&.cycle-pager-active
 				box-shadow: 0 0 0 3px #eb9119
@@ -151,9 +133,33 @@
 			display: block
 			border-radius: 7px
 			
-
-
-
+.content
+	margin-bottom: 40px
+	line-height: 1.6
+	h1, h2, h3, h4, h5, h6, p, ul, ol
+		margin-bottom: 15px
+	h1, h2, h3, h4, h5, h6
+		line-height: 1.2
+	h2
+		+direct-scb
+		font-size: 20px
+	h3
+		+direct-c
+		font-size: 18px
+	ul
+		li
+			position: relative
+			margin-bottom: 10px
+			padding-left: 48px 
+			&:before
+				content: ""
+				position: absolute
+				top: 5px
+				left: 19px
+				width: 7px
+				height: 7px
+				background: #0A589B
+				border-radius: 50% 
 
 
 
