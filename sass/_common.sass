@@ -1,15 +1,20 @@
 //fonts
-+font(DirectRegular, direct)
++font(DirectCondensed, als_direct_cond)
++font(DirectCondensedLight, als_direct_cond_light)
++font(DirectSemiCondencedBold, als_direct_semicond_bold)
++font(DirectItalic, als_direct_italic)
+
 =direct-c
-	// condensed
+	font-family: 'DirectCondensed', Arial, sans-serif
 =direct-cl
-	// condensed-light	
+	font-family: 'DirectCondensedLight', Arial, sans-serif	
 =direct-scb
-	// semi-condensed-bold
+	font-family: 'DirectSemiCondencedBold', Arial, sans-serif	
 =direct-i
-	// italic			
+	font-family: 'DirectItalic', Arial, sans-serif			
 	
 $orange: #d96a00
+$blue: #246DB4
 
 body
 	min-width: 1024px
@@ -21,7 +26,7 @@ body
 	+background-image(linear-gradient(bottom, #fff 0%, #e3ebf4 78.25%, #fff 95.75%, #fff 100%))
 
 a
-	color: #246DB4
+	color: $blue
 	&:hover
 		text-decoration: none
 		color: $orange
@@ -50,7 +55,6 @@ a
 	+background-image(linear-gradient(top, #ffeb21 0%, #ce5a00 100%))
 	+box-shadow(0 1px 2px 0px #c56b00, 0 5px 14px 0px #cd7a17)
 	text-align: center
-	font-weight: bold // remove
 	+direct-scb
 	text-decoration: none
 	color: #fff
