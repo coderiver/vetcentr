@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'DirectItalic';
-    src: url('als_direct_italic.eot');
-    src: url('als_direct_italic.eot') format('embedded-opentype'),
-         url('als_direct_italic.woff') format('woff'),
-         url('als_direct_italic.ttf') format('truetype'),
-         url('als_direct_italic.svg#DirectItalic') format('svg');
-}

@@ -31,7 +31,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .push { height: 243px; }
 
-.subscribe { position: relative; display: inline-block; height: 43px; line-height: 41px; overflow: hidden; padding: 0 18px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 10px; background: #efae12; border-bottom: 3px solid #a25100; background-image: -moz-linear-gradient(top, #ffeb21 0%, #ce5a00 100%); background-image: -webkit-linear-gradient(top, #ffeb21 0%, #ce5a00 100%); background-image: linear-gradient(to bottom, #ffeb21 0%, #ce5a00 100%); -moz-box-shadow: 0 1px 2px 0px #c56b00, 0 5px 14px 0px #cd7a17; -webkit-box-shadow: 0 1px 2px 0px #c56b00, 0 5px 14px 0px #cd7a17; box-shadow: 0 1px 2px 0px #c56b00, 0 5px 14px 0px #cd7a17; text-align: center; font-weight: bold; font-family: "DirectSemiCondencedBold", Arial, sans-serif; text-decoration: none; color: white; font-size: 14px; text-shadow: 1px 1px 0px #c17900; }
+.subscribe { position: relative; display: inline-block; height: 43px; line-height: 41px; overflow: hidden; padding: 0 18px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 10px; background: #efae12; border-bottom: 3px solid #a25100; background-image: -moz-linear-gradient(top, #ffeb21 0%, #ce5a00 100%); background-image: -webkit-linear-gradient(top, #ffeb21 0%, #ce5a00 100%); background-image: linear-gradient(to bottom, #ffeb21 0%, #ce5a00 100%); -moz-box-shadow: 0 1px 2px 0px #c56b00, 0 5px 14px 0px #cd7a17; -webkit-box-shadow: 0 1px 2px 0px #c56b00, 0 5px 14px 0px #cd7a17; box-shadow: 0 1px 2px 0px #c56b00, 0 5px 14px 0px #cd7a17; text-align: center; font-family: "DirectSemiCondencedBold", Arial, sans-serif; text-decoration: none; color: white; font-size: 14px; text-shadow: 1px 1px 0px #c17900; }
 .subscribe:before { content: ""; position: absolute; top: 1px; left: 1px; right: 1px; height: 20px; -moz-border-radius: 8px 8px 53px 53px/11px 11px 6px 6px; -webkit-border-radius: 8px; border-radius: 8px 8px 53px 53px/11px 11px 6px 6px; background: #fee94e; background-image: -moz-linear-gradient(top, #fff55e 0%, #f7c72e 100%); background-image: -webkit-linear-gradient(top, #fff55e 0%, #f7c72e 100%); background-image: linear-gradient(to bottom, #fff55e 0%, #f7c72e 100%); -moz-box-shadow: 0 1px 10px 0px #f7c72e, inset 0px 2px 3px #ffffc5; -webkit-box-shadow: 0 1px 10px 0px #f7c72e, inset 0px 2px 3px #ffffc5; box-shadow: 0 1px 10px 0px #f7c72e, inset 0px 2px 3px #ffffc5; z-index: 1; }
 .subscribe:after { content: ""; position: absolute; bottom: -400px; left: 50%; margin-left: -200px; width: 400px; height: 400px; border-radius: 50%; -moz-box-shadow: 0 0 12px 3px #fcc505; -webkit-box-shadow: 0 0 12px 3px #fcc505; box-shadow: 0 0 12px 3px #fcc505; }
 .subscribe span { position: relative; z-index: 2; }
@@ -232,10 +232,12 @@ a:hover { text-decoration: none; color: #d96a00; }
 .catalog { position: relative; margin-bottom: 30px; }
 
 .catalog__bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.catalog__bg img { position: absolute; top: 0; left: 0; right: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transition: opacity 200ms; -o-transition: opacity 200ms; -webkit-transition: opacity 200ms; transition: opacity 200ms; }
+.catalog__bg img.is-active { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 
-.catalog__inner { position: relative; width: 766px; margin: 0 auto; }
+.catalog__inner { position: relative; width: 766px; margin: 0 auto; z-index: 2; }
 
-.catalog__title { margin-bottom: 40px; text-align: center; font-size: 24px; color: #006db2; font-family: "DirectSemiCondencedBold", Arial, sans-serif; font-weight: bold; }
+.catalog__title { margin-bottom: 40px; text-align: center; font-size: 24px; color: #006db2; font-family: "DirectSemiCondencedBold", Arial, sans-serif; }
 
 .catalog__tabs { position: relative; border-radius: 20px; padding: 55px 40px 30px; background: #f8fcff; background-image: -moz-linear-gradient(top, #ffffff 0%, #f1f9ff 100%); background-image: -webkit-linear-gradient(top, #ffffff 0%, #f1f9ff 100%); background-image: linear-gradient(to bottom, #ffffff 0%, #f1f9ff 100%); -moz-box-shadow: 0px 25px 37px -15px #94aec4; -webkit-box-shadow: 0px 25px 37px -15px #94aec4; box-shadow: 0px 25px 37px -15px #94aec4; }
 
