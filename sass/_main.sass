@@ -210,6 +210,112 @@
 			+opacity(0)
 	&.is-center
 		width: 569px
+		
+.benefits
+	position: relative
+	background: #fff
+	margin-bottom: 55px
+	
+.benefits__title
+	margin-bottom: 35px
+	+direct-scb
+	font-size: 20px
+	color: #182e41
+	text-align: center
+.benefits__list
+	+justify
+	padding-bottom: 30px
+	+box-shadow(0 22px 37px -19px #87a5c3)
+.benefits__item
+	position: relative
+	+justify-child
+	width: 27%
+	+box
+	padding-left: 89px
+	i
+		position: absolute
+		top: 0
+		left: 0
+	p
+		text-align: left
+		font-size: 12px
+		color: #8e9ca8
+		font-style: italic
+		line-height: 1.6 	
+.icon-mode
+	+s(mode)
+.icon-money
+	+s(money)
+.icon-logistic
+	+s(logistic)
+.benefits__name
+	+direct-c
+	font-size: 18px
+	color: #182e41
+	text-align: left
+	margin-bottom: 15px 	
+
+.board
+	float: left
+	width: 205px
+	margin-right: 48px
+.board__title, .m-news__link
+	position: relative
+	display: inline-block
+	margin-bottom: 20px
+	font-size: 20px
+	+direct-scb
+	color: #182e41
+	text-decoration: none
+	&:before
+		content: ""
+		position: absolute
+		right: -15px
+		top: 8px
+		+s(board-link-arr)
+	&:hover
+		color: #ff9418
+		&:before
+			+s(board-link-arr-h)	
+.board__item
+	margin-bottom: 50px
+	a
+		display: inline-block
+		margin-bottom: 10px
+		+direct-c
+		font-size: 18px
+		color: #0c90cd
+		&:hover
+			color: #ff8600
+			text-decoration: none
+	p
+		font-size: 12px
+		color: #323d46
+.m-news 
+	float: left
+	width: 586px
+	padding: 37px 40px 10px
+	+box 
+	background: #fbf9f6
+	+g(#f8f3ee, #fffefe)
+.m-news__topper
+	margin-bottom: 15px
+.m-news__link
+	margin-bottom: 0	
+.m-news__inner
+	+clr
+	margin-left: -4%		
+.m-news__col
+	float: left
+	width: 46%
+	margin-left: 4%
+.m-news__item
+	margin-bottom: 20px 
+	img
+		width: 100%
+		+img 					
+
+
 		 	  
 	
 		 
