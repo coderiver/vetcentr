@@ -54,6 +54,20 @@ head.ready(function() {
 		});
 	};
 
+	// fancy box
+	var fancy_el = $('.js-fancybox'),	
+			fancy_popup = $('.js-fancybox-popup');
+	if (fancy_el.length) {
+		fancy_el.fancybox({
+			padding: 10
+		});
+	};
+	if (fancy_popup.length) {
+		fancy_el.fancybox({
+			padding: 0
+		});
+	};
+
 	// document click
 	var agent = navigator.userAgent,
 	event = (agent.match(/iPad/i)) ? 'touchstart' : 'click';
