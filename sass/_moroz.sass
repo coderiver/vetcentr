@@ -1,4 +1,4 @@
-// about page styles
+// moroz page styles
 .document
 	&.document_aside
 		text-align: center
@@ -13,6 +13,7 @@
 		text-decoration: none
 		vertical-align: top
 		text-align: center
+		+link-img
 	.document__title
 		margin-bottom: 25px
 		+direct-scb
@@ -20,17 +21,11 @@
 	.document__pic
 		margin-bottom: 17px
 		font-size: 0
-		img
-			width: 100%
-			border: 3px solid #fff
-			border-radius: 8px
-			box-shadow: 0 2px 9px rgba(49,86,122,.67)
 	.document__link	
-		display: inline-block
+		display: inline
 		+direct-c
 		border-bottom: 1px dotted 
 		font-size: 16px
-		line-height: 1.2
 
 .about
 	margin-bottom: 50px
@@ -38,8 +33,15 @@
 		margin-bottom: 40px
 		+clr
 	.about__doctor
+		position: relative
 		float: left
-		margin-right: 20px
+		margin: 0 50px 30px 0
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			right: -30px
+			+s(about-quote)
 	.about__doctor-pic
 		padding-left: 15px
 		margin-bottom: 17px
@@ -55,23 +57,7 @@
 	.about__doctor-position
 		+direct-i
 		color: #919BA6 
-	.about__motto
-		padding: 20px 45px
-		border-radius: 5px
-		background: #f9f3c9
-		line-height: 1.6
-		font-weight: bold 
-		color: #54402D
-	.content
-		position: relative
-		display: table
-		padding: 10px 0 0 40px
-		&:before
-			content: ""
-			position: absolute
-			top: 0
-			left: 0
-			+s(about-quote)
+	
 
 .news
 	margin-bottom: 30px

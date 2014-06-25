@@ -87,16 +87,13 @@
 		+s(gallery-next)
 	.gallery__photos
 		margin-bottom: 22px
-		border: 3px solid #fff
-		border-radius: 13px
-		background-color: #ebeff7
-		box-shadow: 0 2px 9px rgba(49,86,122,.67)
+		+img
 	.gallery__item
 		width: 100%
 		img
 			display: block
 			width: 100%
-			border-radius: 11px
+			border-radius: 6px
 	.gallery__description
 		position: absolute
 		left: 20px
@@ -112,28 +109,31 @@
 		margin-right: -25px
 		font-size: 0
 		a
+			position: relative
 			display: inline-block
 			margin: 0 20px 20px 0
-			border-radius: 9px
-			box-shadow: 0 2px 9px rgba(49,86,122,.67)
-			border: 3px solid #fff
+			+link-img
 			vertical-align: top
-			+tr(all .2s linear)
-			&:hover
-				background: #eb9119
-				img
-					+tr(opacity .2s linear)
-					opacity: .4
+			&:after
+				content: ""
+				position: absolute
+				top: 3px
+				left: 3px
+				right: 3px
+				bottom: 3px
+				background-color: rgba(235,145,25,.8)
+				border-radius: 6px
+				opacity: 0
+				+tr(opacity .2s) 
 			&.cycle-pager-active
-				box-shadow: 0 0 0 3px #eb9119
 				cursor: default
+				&:after
+					opacity: 1
 				&:hover
-					background: none
 					img
-						opacity: 1 
+						box-shadow: 0 2px 9px rgba(49, 86, 122, 0.67)
 		img
 			display: block
-			border-radius: 7px
 
 .date
 	font-style: italic
@@ -187,11 +187,39 @@
 		top: -1px
 		margin-right: 10px 
 		+s(back-arr)
+
+.fact
+	margin-bottom: 40px
+	&:after
+		content: ""
+		position: absolute
+		right: 20px
+		left: 20px
+		bottom: 50px
+		height: 10px
+		box-shadow: 0 0 20px 10px #d9d5cf 
+		+rotate(4)
+		z-index: 2
+	.fact__in	
+		position: relative
+		padding: 15px 25px 40px
+		background-color: #f5f0e9
+		+g(#f7f3ec, #fff)
+		z-index: 4 
+	.fact__title		
+		margin-bottom: 10px
+		+direct-c
+		font-size: 18px
+	.fact__text
+		font-style: italic
+		color: #919BA6 
+		line-height: 1.6
 			
 .content
 	margin-bottom: 40px
 	line-height: 1.6
-	h1, h2, h3, h4, h5, h6, p, ul, ol
+	+clr
+	h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote
 		margin-bottom: 15px
 	h1, h2, h3, h4, h5, h6
 		line-height: 1.2
@@ -229,13 +257,21 @@
 				left: 0
 				font-size: 16px
 				color: #E98500 
-	img
-		border: 3px solid #fff
-		border-radius: 13px
-		box-shadow: 0 2px 9px rgba(49,86,122,.67)
-		&.is-left
-			float: left
-			margin: 0 27px 30px 0
+	a
+		+link-img
+	>img
+		float: left
+		margin: 0 27px 30px 0
+		+img
+	blockquote
+		padding: 20px 45px
+		border-radius: 5px
+		background: #f9f3c9
+		line-height: 1.6
+		font-weight: bold 
+		color: #54402D
+
+			
 
 
 

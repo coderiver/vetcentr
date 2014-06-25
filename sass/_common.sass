@@ -39,7 +39,14 @@ $blue: #246DB4
 	+box
 	border: 3px solid #fff
 	border-radius: 8px
-	+box-shadow(0 2px 9px rgba(49, 86, 122, 0.67))
+	box-shadow: 0 2px 9px rgba(49, 86, 122, 0.67)
+=link-img
+	img
+		+img
+		+tr(box-shadow .2s)
+	&:hover
+		img
+			box-shadow: 0 0 0 3px $orange
 	
 body
 	min-width: 1024px
