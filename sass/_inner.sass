@@ -19,17 +19,19 @@
 	+clr
 	.title__link
 		float: right
+		padding-top: 12px
 		margin-left: 20px
 		font-size: 0
 		span, i
 			display: inline-block
 			vertical-align: middle
 		span
+			padding-top: 1px
 			font-size: 12px
 			color: $orange
 			text-decoration: underline
 		i
-			margin-right: 5px
+			margin-right: 10px
 	.title__link-subscribe
 		+s(title-link-subscribe)
 	.title__text
@@ -132,6 +134,59 @@
 		img
 			display: block
 			border-radius: 7px
+
+.date
+	font-style: italic
+	color: #919BA6 
+
+.pager
+	font-size: 0
+	text-align: center
+	.pager__title, .pager__list
+		display: inline-block
+		vertical-align: middle
+	.pager__title
+		margin-right: 32px 
+		font-size: 12px
+	.pager__list
+		font-weight: bold
+		a
+			display: inline-block
+			min-width: 10px
+			padding: 4px 6px
+			margin-right: 6px
+			color: #253242 
+			vertical-align: middle
+			font-size: 12px
+			&.is-active
+				background: #FAF4CA 
+				text-decoration: none
+		.pager__prev, .pager__next
+			padding: 0
+		.pager__prev
+			margin-right: 16px
+			+s(pager-prev)
+		.pager__next
+			margin-left: 10px
+			+s(pager-next)
+
+.back
+	a
+		font-size: 0
+		&:hover
+			span
+				text-decoration: none 
+	i, span
+		display: inline-block
+		vertical-align: middle
+		font-size: 12px
+	span
+		text-decoration: underline
+	i
+		position: relative
+		top: -1px
+		margin-right: 10px 
+		+s(back-arr)
 			
 .content
 	margin-bottom: 40px
@@ -160,6 +215,27 @@
 				height: 7px
 				background: #0A589B
 				border-radius: 50% 
+	ol
+		counter-reset: list
+		li
+			position: relative
+			padding-left: 30px 
+			margin-bottom: 10px
+			&:before
+				counter-increment: list
+				content: counter(list) "."
+				position: absolute
+				top: -4px
+				left: 0
+				font-size: 16px
+				color: #E98500 
+	img
+		border: 3px solid #fff
+		border-radius: 13px
+		box-shadow: 0 2px 9px rgba(49,86,122,.67)
+		&.is-left
+			float: left
+			margin: 0 27px 30px 0
 
 
 
