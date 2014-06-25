@@ -284,7 +284,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 .catalog__phrase { float: right; padding-top: 30px; width: 290px; height: 77px; background: url(../img/phrase.png) 0 0 no-repeat; text-align: right; font-family: "DirectItalic", Arial, sans-serif; font-size: 16px; color: #182e41; }
 .catalog__phrase span { color: #8e9ca8; font-size: 12px; }
 
-.banners { position: relative; padding-top: 50px; padding-bottom: 58px; background-image: -moz-linear-gradient(#d5ebf7, #ffffff); background-image: -webkit-linear-gradient(#d5ebf7, #ffffff); background-image: linear-gradient(#d5ebf7, #ffffff); }
+.banners { position: relative; padding-top: 50px; overflow: hidden; padding-bottom: 58px; background-image: -moz-linear-gradient(#d5ebf7, #ffffff); background-image: -webkit-linear-gradient(#d5ebf7, #ffffff); background-image: linear-gradient(#d5ebf7, #ffffff); }
 .banners:before { content: ""; position: absolute; top: -39px; width: 100%; height: 24%; background: #e4edf7; border-radius: 50%; }
 
 .banners__slider { font-size: 0; width: 100%; overflow: hidden; }
@@ -295,7 +295,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 .banners__link { position: relative; display: inline-block; line-height: normal; vertical-align: top; font-size: 14px; width: 276px; height: 144px; border: 3px solid white; border-radius: 11px; overflow: hidden; }
 .banners__link:after { content: ""; position: absolute; top: -10px; left: 0; right: 0; height: 10px; -moz-box-shadow: 0 0 70px 10px white; -webkit-box-shadow: 0 0 70px 10px white; box-shadow: 0 0 70px 10px white; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; -moz-transition: opacity 200ms; -o-transition: opacity 200ms; -webkit-transition: opacity 200ms; transition: opacity 200ms; }
 .banners__link img { width: 100%; height: 100%; border-radius: 8px; }
-.banners__link:hover:after { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+.banners__link:hover:after { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .banners__link.is-center { width: 569px; }
 
 .breadcrumbs { padding: 7px 0; margin-bottom: 23px; font-size: 0; }
