@@ -47,9 +47,12 @@ head.ready(function() {
 
 // banners slider
 
-	$('.multiple-items').slick({
+	$('.js-banners').slick({
 		infinite: true,
-		slidesToShow: 1
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		dots: true
 	});
 
 
