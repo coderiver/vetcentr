@@ -27,6 +27,7 @@ body
 
 a
 	color: $blue
+	+transition(color 200ms)
 	&:hover
 		text-decoration: none
 		color: $orange
@@ -516,12 +517,11 @@ a
 			border-radius: 5px
 			font-size: 16px
 			+direct-scb
-			font-weight: bold // remove
 			color: #f66a00
-			+tr(all 200ms)
 			span
 				display: inline-block
-				border-bottom: 1px solid 
+				border-bottom: 1px solid
+				+tr(border-color 200ms)
 			&:hover
 				color: #fe8700
 				span

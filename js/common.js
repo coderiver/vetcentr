@@ -47,7 +47,12 @@ head.ready(function() {
 
 // banners slider
 
-	
+	$('.multiple-items').slick({
+		infinite: true,
+		slidesToShow: 1
+	});
+
+
 
 // document click
 

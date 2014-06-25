@@ -24,7 +24,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 @font-face { font-family: DirectItalic; src: url("fonts/als_direct_italic.eot"); src: url("fonts/als_direct_italic.eot?#iefix") format("embedded-opentype"), url("fonts/als_direct_italic.woff") format("woff"), url("fonts/als_direct_italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { min-width: 1024px; font-family: Arial, sans-serif; font-size: 12px; color: #253242; line-height: 1.3; background: #f2f6fa; background-image: -moz-linear-gradient(bottom, #ffffff 0%, #e3ebf4 78.25%, #ffffff 95.75%, #ffffff 100%); background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #e3ebf4 78.25%, #ffffff 95.75%, #ffffff 100%); background-image: linear-gradient(to top, #ffffff 0%, #e3ebf4 78.25%, #ffffff 95.75%, #ffffff 100%); }
 
-a { color: #246db4; }
+a { color: #246db4; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
 a:hover { text-decoration: none; color: #d96a00; }
 
 .out { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -243px; }
@@ -169,8 +169,8 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .menu { display: inline-block; font-size: 0; }
 .menu li { display: inline-block; }
-.menu li a { display: block; height: 22px; padding: 5px 13px; border-radius: 5px; font-size: 16px; font-family: "DirectSemiCondencedBold", Arial, sans-serif; font-weight: bold; color: #f66a00; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; }
-.menu li a span { display: inline-block; border-bottom: 1px solid; }
+.menu li a { display: block; height: 22px; padding: 5px 13px; border-radius: 5px; font-size: 16px; font-family: "DirectSemiCondencedBold", Arial, sans-serif; color: #f66a00; }
+.menu li a span { display: inline-block; border-bottom: 1px solid; -moz-transition: border-color 200ms; -o-transition: border-color 200ms; -webkit-transition: border-color 200ms; transition: border-color 200ms; }
 .menu li a:hover { color: #fe8700; }
 .menu li a:hover span { border-bottom-color: white; }
 .menu li a.is-active { background: #fcf4c9; color: #5a3e27; }
