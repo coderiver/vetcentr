@@ -24,7 +24,6 @@
 			width: 100%
 			border: 3px solid #fff
 			border-radius: 8px
-			background-color: #000
 			box-shadow: 0 2px 9px rgba(49,86,122,.67)
 	.document__link	
 		display: inline-block
@@ -73,3 +72,41 @@
 			top: 0
 			left: 0
 			+s(about-quote)
+
+.news
+	margin-bottom: 30px
+	.news__item
+		padding: 30px 0
+		border-top: #DADADA 1px dashed 
+		+clr
+		&:first-child
+			border: none
+	.news__pic
+		float: left
+		margin-right: 30px 
+		img
+			display: block
+			border: 3px solid #fff
+			border-radius: 13px
+			box-shadow: 0 2px 9px rgba(49,86,122,.67)
+	.news__date
+		display: table
+	.news__title
+		margin-bottom: 10px
+		+direct-c
+		font-size: 18px
+		line-height: 1.2
+	.news__text
+		margin-bottom: 10px
+		line-height: 1.6
+	>.date
+		margin-bottom: 10px 
+	
+
+
+
+
+
+
+
+
