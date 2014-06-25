@@ -1,11 +1,21 @@
 // default layout
-.l-center
+.l-center, .l-layout
 	max-width: 1160px
 	min-width: 1024px
 	margin: 0 auto	
 	+clr
+.l-layout
+	padding-bottom: 60px
 .l-aside
+	position: relative
 	float: left
 	width: 205px
-.l-section
-	margin: 0 50px 0 295px
+	z-index: 4 
+.l-section 
+	position: relative
+	float: left
+	width: 100%
+	margin: 0 0 0 -205px
+	z-index: 2 
+.l-section__in	
+	padding: 0 50px 0 295px
