@@ -45,6 +45,10 @@ head.ready(function() {
     	return false;
 	});	 
 
+// banners slider
+
+	
+
 // document click
 
 	var agent = navigator.userAgent,
