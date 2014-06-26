@@ -258,8 +258,9 @@
 .board
 	float: left
 	width: 205px
+	padding-top: 38px
 	margin-right: 48px
-.board__title, .m-news__link
+.m-link
 	position: relative
 	display: inline-block
 	margin-bottom: 20px
@@ -279,6 +280,7 @@
 			+s(board-link-arr-h)	
 .board__item
 	margin-bottom: 50px
+.m-post	
 	a
 		display: inline-block
 		margin-bottom: 10px
@@ -291,6 +293,8 @@
 	p
 		font-size: 12px
 		color: #323d46
+		line-height: 1.6
+		margin-bottom: 5px 
 .m-news 
 	float: left
 	width: 586px
@@ -302,7 +306,7 @@
 	margin-bottom: 15px
 .m-news__link
 	margin-bottom: 0	
-.m-news__inner
+.m-news__row
 	+clr
 	margin-left: -4%		
 .m-news__col
@@ -310,10 +314,31 @@
 	width: 46%
 	margin-left: 4%
 .m-news__item
-	margin-bottom: 20px 
+	margin-bottom: 20px
 	img
 		width: 100%
-		+img 					
+		+img
+.m-clinics
+	float: left
+	width: 320px 
+	padding-top: 38px
+	text-align: center
+.m-clinics__img
+	margin-bottom: 35px
+	font-size: 0
+	img
+		margin-bottom: 5px 
+	p
+		font-size: 12px
+		color: #939eac
+		font-style: italic
+.m-clinics__btn
+	.subscribe
+		margin-bottom: 5px
+	p
+		font-size: 12px
+		color: #939eac
+		font-style: italic				 					
 
 
 		 	  
