@@ -15,7 +15,7 @@
 		right: 0
 		max-width: 100%
 		+opacity(0)
-		+tr(opacity 200ms)
+		+tr(opacity 800ms)
 		&.is-active
 			+opacity(1)
 .catalog__inner
@@ -364,8 +364,100 @@
 		font-size: 12px
 		color: #939eac
 		font-style: italic
-// *
-// 	box-shadow: 0 0 1px 0 red				 					
+
+// catalog popup
+.catalog-popup
+	position: absolute
+	top: 28px
+	left: 10px
+	right: 10px
+	height: 360px
+	border-radius: 15px
+	background: #fff
+	@include box-shadow(0 2px 20px rgba(78,106,122,.37))
+	@include background-image(linear-gradient(top, #fff 0%, #fff 10%, #f9fdff 30%, #f1f9ff 100%))
+	z-index: 99
+.catalog-popup__header
+	height: 117px
+	margin: 0 5px 18px
+	padding: 22px 20px 0 50px
+	+box
+	border-radius: 15px 15px 0 0
+	background: #fff  
+	@include box-shadow(0 13px 20px -4px #dfe3e7)
+.catalog-popup__topper
+	+clr
+	margin-bottom: 15px	
+.catalog-popup__title
+	position: relative
+	float: left
+	font-size: 18px
+	color: #182e41
+	+direct-c
+	&:before
+		content: ""
+		position: absolute
+		top: 6px
+		right: -16px
+		+s(link-right)
+.catalog-popup__close
+	position: relative
+	float: right
+	margin-top: 2px
+	height: 23px
+	padding: 0 15px 0 25px 
+	line-height: 23px
+	border-radius: 6px
+	border: 1px solid #d2d2d2
+	background: #fefefe
+	+g(#fff, #efefef)
+	text-decoration: none
+	font-size: 12px
+	color: #182e41
+	&:before
+		content: ""
+		position: absolute
+		top: 7px
+		left: 10px
+		+s(catalog-back)
+	&:hover
+		color: #182e41
+		+g(#efefef, #fff)
+.catalog-popup__th
+	+clr
+	width: 635px
+	li
+		float: left
+		width: 135px
+		text-align: center
+		font-size: 12px
+		color: #8b9ba8
+		&.catalog-popup__name
+			width: 200px 		
+.catalog-popup__container
+	padding: 0 48px
+.catalog-popup__inner	
+	height: 196px
+	outline: none
+.catalog-popup__table
+	width: 100%
+	td
+		width: 135px
+		text-align: center
+		font-size: 20px
+		color: #323d46
+		line-height: 1
+		padding-bottom: 25px
+		a
+			font-weight: normal
+			font-size: 12px
+			color: #323d46
+		&:first-child
+			width: 200px
+			text-align: left 	 			  		 	
+		&.catalog-popup__price
+			font-size: 12px
+			font-weight: bold
 
 
 		 	  

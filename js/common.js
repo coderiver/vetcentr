@@ -290,4 +290,86 @@ head.ready(function() {
   	}
   	tab();
 
+// sitemap popup
+
+	$(".js-sitemap").hide();
+
+	$(".js-sitemap-btn").on('click', function(){
+		$(".js-sitemap").show();
+		return false;
+	});
+
+	$(".js-sitemap-close").on('click', function(){
+		$(this).parents(".js-sitemap").hide();
+		return false;
+	});
+
+// catalog tabs
+
+	if ($(".catalog__tabs").length) {
+		function CatalogTabs(){
+			
+			$(".catalog__tabs").each(function(){
+				var tabs_btn = $(this).find('> .catalog__tabs-nav a'),
+					tabs_container = $(this).find('> .catalog__tabs-wrap'),
+					tabs_item = tabs_container.find('> .catalog__tabs-content'),
+					tabs_bg = $('.catalog__bg img');
+				tabs_item.hide();
+				tabs_item.first().show();
+				tabs_btn.on('click', function() {
+					if (!$(this).hasClass('is-active')) {
+						var id = $(this).attr('href');
+						tabs_btn.removeClass('is-active');
+						$(this).addClass('is-active');
+						tabs_item.hide();
+						$(id).fadeIn('fast');
+						//change background
+						tabs_bg.removeClass('is-active');
+						$('[data-type = '+id+']').addClass('is-active');
+						
+						return false;
+					};
+				});
+			});
+
+		}
+		CatalogTabs();
+	}
+
+// scroll-pane
+
+	function scrollPane(){
+        if ($(".js-scroll-pane").length > 0){
+            $('.js-scroll-pane').jScrollPane({
+                reinitialise: true
+            }); 
+        }
+    }
+	
+    scrollPane();
+
+// catalog popup
+	
+	$(".js-catalog").hide();
+
+	function catalogPopup(){
+		if ($(".js-catalog")) {
+
+			var link = $(".js-catalog-link"),
+			close = $('.js-catalog-close');
+
+			link.each(function(){
+				$(this).on('click', function(){
+					$(this).parent().find('.js-catalog').fadeIn();
+					return false;
+				});	
+			});
+			close.on('click', function(){
+				$(this).parents('.js-catalog').fadeOut();
+			});
+
+		}
+	} 	
+	catalogPopup();   	
+
 });
