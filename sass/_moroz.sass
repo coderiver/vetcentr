@@ -59,36 +59,82 @@
 		color: #919BA6 
 	
 
-.news
+.post
 	margin-bottom: 30px
-	.news__item
+	.post__item
 		padding: 30px 0
 		border-top: #DADADA 1px dashed 
 		+clr
 		&:first-child
 			border: none
-	.news__pic
+	.post__pic
 		float: left
 		margin-right: 30px 
+		a
+			+link-img
 		img
 			display: block
-			border: 3px solid #fff
-			border-radius: 13px
-			box-shadow: 0 2px 9px rgba(49,86,122,.67)
-	.news__date
+	.post__date
 		display: table
-	.news__title
+	.post__title
 		margin-bottom: 10px
 		+direct-c
 		font-size: 18px
 		line-height: 1.2
-	.news__text
+	.post__text
 		margin-bottom: 10px
 		line-height: 1.6
+
+.news
 	>.date
 		margin-bottom: 10px 
 	
-
+.steps
+	position: relative
+	padding: 25px 0 72px
+	font-size: 0
+	text-align: center
+	.steps__item, .steps__line
+		position: relative
+		display: inline-block
+		vertical-align: top
+	.steps__item
+		width: 22px
+		height: 22px
+		padding: 4px
+		background-color: #f3f5f9
+		box-shadow: 0 1px 0 #fff, inset 0 1px 2px rgba(137,156,171,.75)
+		border-radius: 50%
+		+background-image(linear-gradient(bottom, #fbfdfd 0%, #dde7f7 100%))
+		font-size: 12px
+		z-index: 2 
+		&.is-active
+			.steps__number
+				background-color: #d98311
+				+background-image(linear-gradient(top, #f2ce45 0%, #d06312 100%))
+				color: #FFF
+				text-shadow: 0 1px 2px #aa6800 
+	.steps__number
+		display: block
+		width: 22px
+		height: 22px
+		text-align: center
+		line-height: 22px
+		border-radius: 50% 
+		color: #b7c1cd
+		font-weight: bold
+	.steps__line
+		width: 150px
+		margin: 12px -1px 0
+		overflow: hidden
+		z-index: 4 
+		i
+			display: block
+			height: 6px  
+			margin: 0 -5px
+			background-color: #f3f5f9
+			box-shadow: 0 1px 0 #fff, inset 0 1px 2px rgba(137,156,171,.75)
+			+background-image(linear-gradient(bottom, #fbfdfd 0%, #dde7f7 100%))
 
 
 
