@@ -52,11 +52,11 @@
 						</ul>
 						<!-- BEGIN site-map -->
 						<div class="sitemap-wrap">
-							<a href="#" class="sitemap__btn">Весь сайт</a>
-							<div class="sitemap">
+							<a href="#" class="sitemap__btn js-sitemap-btn">Весь сайт</a>
+							<div class="sitemap js-sitemap">
 								<div class="sitemap__topper">
 									<a href="#" class="sitemap__btn is-open">Весь сайт</a>
-									<button class="sitemap__close"><span>Закрыть</span></button>
+									<a href="#" class="sitemap__close js-sitemap-close"><span>Закрыть</span></a>
 								</div>
 								<div class="sitemap__nav">
 									<div class="sitemap__col">
@@ -284,112 +284,664 @@
 	<div class="l-center">
 		<div class="catalog">
 			<div class="catalog__bg">
-				<img class="is-active" src="img/cats.png" alt="">
-				<img src="img/dogs.png" alt="">
-				<img src="img/errets.png" alt="">
-				<img src="img/rodents.png" alt="">
-				<img src="img/reptilies.png" alt="">
-				<img src="img/birds.png" alt="">
+				<img data-type="#catalog-cats" class="is-active" src="img/cats.png" alt="">
+				<img data-type="#catalog-dogs" src="img/dogs.png" alt="">
+				<img data-type="#catalog-errets" src="img/errets.png" alt="">
+				<img data-type="#catalog-rodents" src="img/rodents.png" alt="">
+				<img data-type="#catalog-reptilies" src="img/reptilies.png" alt="">
+				<img data-type="#catalog-birds" src="img/birds.png" alt="">
 			</div>
 			<div class="catalog__inner">
 				<div class="catalog__title">Круглосуточная ветеринарная помощь<br> для ваших любимых питомцев</div>
 				<div class="catalog__tabs">
 					<div class="catalog__tabs-nav">
 						<ul class="catalog__tabs-list">
-							<li><a href="#" class="catalog__tabs-link is-active"><span>Кошки</span></a></li>
-							<li><a href="#" class="catalog__tabs-link"><span>Собаки</span></a></li>
-							<li><a href="#" class="catalog__tabs-link"><span>Хорьки</span></a></li>
-							<li><a href="#" class="catalog__tabs-link"><span>Грызуны</span></a></li>
-							<li><a href="#" class="catalog__tabs-link"><span>Рептилии</span></a></li>
-							<li><a href="#" class="catalog__tabs-link"><span>Птицы</span></a></li>
+							<li><a href="#catalog-cats" class="catalog__tabs-link is-active"><span>Кошки</span></a></li>
+							<li><a href="#catalog-dogs" class="catalog__tabs-link"><span>Собаки</span></a></li>
+							<li><a href="#catalog-errets" class="catalog__tabs-link"><span>Хорьки</span></a></li>
+							<li><a href="#catalog-rodents" class="catalog__tabs-link"><span>Грызуны</span></a></li>
+							<li><a href="#catalog-reptilies" class="catalog__tabs-link"><span>Рептилии</span></a></li>
+							<li><a href="#catalog-birds" class="catalog__tabs-link"><span>Птицы</span></a></li>
 						</ul>
 					</div>
-					<div class="catalog__tabs-content ">
-						<div class="catalog__left">
-							<ul class="catalog__list">
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Диагностика</a>
-								</li>
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Прием</a>
-								</li>
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Процедуры</a>
-								</li>
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Диспансеризация</a>
-									<ul class="catalog__sublist">
-										<li>
-											<a href="#" class="catalog__sublink">Плановая<i></i></a>
+						<div class="catalog__tabs-wrap">
+							<div class="catalog__tabs-content" id="catalog-cats">
+								<div class="catalog__left">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link js-catalog-link">Диагностика</a>
+											<!-- BEGIN catalog-popup -->
+											<div class="catalog-popup js-catalog">
+												<div class="catalog-popup__header">
+													<div class="catalog-popup__topper">
+														<div class="catalog-popup__title">Направления в лечении</div>
+														<a href="#" class="catalog-popup__close js-catalog-close">Назад</a>
+													</div>
+													<ul class="catalog-popup__th">
+														<li class="catalog-popup__name">Глаза</li>
+														<li class="">Доп. оплачиваются расход. материалы</li>
+														<li class="">Доп. оплачивается амбулат. прием</li>
+														<li class="">Стоимость (руб.)</li>
+													</ul>
+												</div>
+												<div class="catalog-popup__container">
+													<div class="catalog-popup__inner js-scroll-pane">
+														<table class="catalog-popup__table">
+															<tbody>
+																<tr>
+																	<td><a href="#">Устранение заворота век</a></td>
+																	<td>+</td>
+																	<td>+</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Амбулаторный приём повторно (за каждый раз)</a></td>
+																	<td>+</td>
+																	<td>+</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Амбулаторный приём повторно (за каждый раз)</a></td>
+																	<td>-</td>
+																	<td>-</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Устранение заворота век</a></td>
+																	<td>+</td>
+																	<td>+</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Амбулаторный приём повторно (за каждый раз)</a></td>
+																	<td>+</td>
+																	<td>+</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Амбулаторный приём повторно (за каждый раз)</a></td>
+																	<td>-</td>
+																	<td>-</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<!-- END catalog-popup -->
 										</li>
-										<li>
-											<a href="#" class="catalog__sublink">Внеплановая<i></i></a>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link js-catalog-link">Прием</a>
+											<!-- BEGIN catalog-popup -->
+											<div class="catalog-popup js-catalog">
+												<div class="catalog-popup__header">
+													<div class="catalog-popup__topper">
+														<div class="catalog-popup__title">Направления в лечении</div>
+														<a href="#" class="catalog-popup__close js-catalog-close">Назад</a>
+													</div>
+													<ul class="catalog-popup__th">
+														<li class="catalog-popup__name">Глаза</li>
+														<li class="">Доп. оплачиваются расход. материалы</li>
+														<li class="">Доп. оплачивается амбулат. прием</li>
+														<li class="">Стоимость (руб.)</li>
+													</ul>
+												</div>
+												<div class="catalog-popup__container">
+													<div class="catalog-popup__inner js-scroll-pane">
+														<table class="catalog-popup__table">
+															<tbody>
+																<tr>
+																	<td><a href="#">Устранение заворота век</a></td>
+																	<td>+</td>
+																	<td>+</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Амбулаторный приём повторно (за каждый раз)</a></td>
+																	<td>+</td>
+																	<td>+</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Амбулаторный приём повторно (за каждый раз)</a></td>
+																	<td>-</td>
+																	<td>-</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Устранение заворота век</a></td>
+																	<td>+</td>
+																	<td>+</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Амбулаторный приём повторно (за каждый раз)</a></td>
+																	<td>+</td>
+																	<td>+</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+																<tr>
+																	<td><a href="#">Амбулаторный приём повторно (за каждый раз)</a></td>
+																	<td>-</td>
+																	<td>-</td>
+																	<td class="catalog-popup__price">55 000</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<!-- END catalog-popup -->
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Процедуры</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диспансеризация</a>
+											<ul class="catalog__sublist">
+												<li>
+													<a href="#" class="catalog__sublink">Плановая<i></i></a>
+												</li>
+												<li>
+													<a href="#" class="catalog__sublink">Внеплановая<i></i></a>
+												</li>
+											</ul>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Гигиена</a>
 										</li>
 									</ul>
-								</li>
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Гигиена</a>
-								</li>
-							</ul>
+								</div>
+								<div class="catalog__mid">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Направления в лечении</a>
+											<div class="catalog__sublist is-wide">
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Глаза<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Уши<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Стоматология<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Желудочно-кишечный тракт и органы брюшной полости (ЖКТ и ОБП)<i></i></a>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Конечности<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия новообразований<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия косметическая<i></i></a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__right">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Вакцинация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стерилизация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Акушерство</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стационар</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Эвтаназия</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__phrase">
+									<p>Omnes salvos volumus!</p>
+									<span>Желаем всем здоровья!</span>
+								</div>
+							</div>
+							<div class="catalog__tabs-content" id="catalog-dogs">
+								<div class="catalog__left">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диагностика</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Прием</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Процедуры</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диспансеризация</a>
+											<ul class="catalog__sublist">
+												<li>
+													<a href="#" class="catalog__sublink">Плановая<i></i></a>
+												</li>
+												<li>
+													<a href="#" class="catalog__sublink">Внеплановая<i></i></a>
+												</li>
+											</ul>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Гигиена</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__mid">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Направления в лечении</a>
+											<div class="catalog__sublist is-wide">
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Глаза<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Уши<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Стоматология<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Желудочно-кишечный тракт и органы брюшной полости (ЖКТ и ОБП)<i></i></a>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Конечности<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия новообразований<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия косметическая<i></i></a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__right">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Вакцинация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стерилизация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Акушерство</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стационар</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Эвтаназия</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__phrase">
+									<p>Omnes salvos volumus!</p>
+									<span>Желаем всем здоровья!</span>
+								</div>
+							</div>
+							<div class="catalog__tabs-content" id="catalog-errets">
+								<div class="catalog__left">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диагностика</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Прием</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Процедуры</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диспансеризация</a>
+											<ul class="catalog__sublist">
+												<li>
+													<a href="#" class="catalog__sublink">Плановая<i></i></a>
+												</li>
+												<li>
+													<a href="#" class="catalog__sublink">Внеплановая<i></i></a>
+												</li>
+											</ul>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Гигиена</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__mid">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Направления в лечении</a>
+											<div class="catalog__sublist is-wide">
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Глаза<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Уши<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Стоматология<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Желудочно-кишечный тракт и органы брюшной полости (ЖКТ и ОБП)<i></i></a>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Конечности<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия новообразований<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия косметическая<i></i></a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__right">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Вакцинация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стерилизация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Акушерство</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стационар</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Эвтаназия</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__phrase">
+									<p>Omnes salvos volumus!</p>
+									<span>Желаем всем здоровья!</span>
+								</div>
+							</div>
+							<div class="catalog__tabs-content" id="catalog-rodents">
+								<div class="catalog__left">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диагностика</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Прием</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Процедуры</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диспансеризация</a>
+											<ul class="catalog__sublist">
+												<li>
+													<a href="#" class="catalog__sublink">Плановая<i></i></a>
+												</li>
+												<li>
+													<a href="#" class="catalog__sublink">Внеплановая<i></i></a>
+												</li>
+											</ul>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Гигиена</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__mid">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Направления в лечении</a>
+											<div class="catalog__sublist is-wide">
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Глаза<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Уши<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Стоматология<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Желудочно-кишечный тракт и органы брюшной полости (ЖКТ и ОБП)<i></i></a>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Конечности<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия новообразований<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия косметическая<i></i></a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__right">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Вакцинация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стерилизация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Акушерство</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стационар</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Эвтаназия</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__phrase">
+									<p>Omnes salvos volumus!</p>
+									<span>Желаем всем здоровья!</span>
+								</div>
+							</div>
+							<div class="catalog__tabs-content" id="catalog-reptilies">
+								<div class="catalog__left">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диагностика</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Прием</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Процедуры</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диспансеризация</a>
+											<ul class="catalog__sublist">
+												<li>
+													<a href="#" class="catalog__sublink">Плановая<i></i></a>
+												</li>
+												<li>
+													<a href="#" class="catalog__sublink">Внеплановая<i></i></a>
+												</li>
+											</ul>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Гигиена</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__mid">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Направления в лечении</a>
+											<div class="catalog__sublist is-wide">
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Глаза<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Уши<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Стоматология<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Желудочно-кишечный тракт и органы брюшной полости (ЖКТ и ОБП)<i></i></a>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Конечности<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия новообразований<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия косметическая<i></i></a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__right">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Вакцинация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стерилизация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Акушерство</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стационар</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Эвтаназия</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__phrase">
+									<p>Omnes salvos volumus!</p>
+									<span>Желаем всем здоровья!</span>
+								</div>
+							</div>
+							<div class="catalog__tabs-content" id="catalog-birds">
+								<div class="catalog__left">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диагностика</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Прием</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Процедуры</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Диспансеризация</a>
+											<ul class="catalog__sublist">
+												<li>
+													<a href="#" class="catalog__sublink">Плановая<i></i></a>
+												</li>
+												<li>
+													<a href="#" class="catalog__sublink">Внеплановая<i></i></a>
+												</li>
+											</ul>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Гигиена</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__mid">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Направления в лечении</a>
+											<div class="catalog__sublist is-wide">
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Глаза<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Уши<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Стоматология<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Желудочно-кишечный тракт и органы брюшной полости (ЖКТ и ОБП)<i></i></a>
+													</li>
+												</ul>
+												<ul>
+													<li>
+														<a href="#" class="catalog__sublink">Конечности<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия новообразований<i></i></a>
+													</li>
+													<li>
+														<a href="#" class="catalog__sublink">Хирургия косметическая<i></i></a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__right">
+									<ul class="catalog__list">
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Вакцинация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стерилизация</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Акушерство</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Стационар</a>
+										</li>
+										<li class="catalog__item">
+											<a href="#" class="catalog__link">Эвтаназия</a>
+										</li>
+									</ul>
+								</div>
+								<div class="catalog__phrase">
+									<p>Omnes salvos volumus!</p>
+									<span>Желаем всем здоровья!</span>
+								</div>
+							</div>
 						</div>
-						<div class="catalog__mid">
-							<ul class="catalog__list">
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Направления в лечении</a>
-									<div class="catalog__sublist is-wide">
-										<ul>
-											<li>
-												<a href="#" class="catalog__sublink">Глаза<i></i></a>
-											</li>
-											<li>
-												<a href="#" class="catalog__sublink">Уши<i></i></a>
-											</li>
-											<li>
-												<a href="#" class="catalog__sublink">Стоматология<i></i></a>
-											</li>
-											<li>
-												<a href="#" class="catalog__sublink">Желудочно-кишечный тракт и органы брюшной полости (ЖКТ и ОБП)<i></i></a>
-											</li>
-										</ul>
-										<ul>
-											<li>
-												<a href="#" class="catalog__sublink">Конечности<i></i></a>
-											</li>
-											<li>
-												<a href="#" class="catalog__sublink">Хирургия новообразований<i></i></a>
-											</li>
-											<li>
-												<a href="#" class="catalog__sublink">Хирургия косметическая<i></i></a>
-											</li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="catalog__right">
-							<ul class="catalog__list">
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Вакцинация</a>
-								</li>
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Стерилизация</a>
-								</li>
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Акушерство</a>
-								</li>
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Стационар</a>
-								</li>
-								<li class="catalog__item">
-									<a href="#" class="catalog__link">Эвтаназия</a>
-								</li>
-							</ul>
-						</div>
-						<div class="catalog__phrase">
-							<p>Omnes salvos volumus!</p>
-							<span>Желаем всем здоровья!</span>
-						</div>
-					</div>
 				</div>
 			</div>	
 		</div>
