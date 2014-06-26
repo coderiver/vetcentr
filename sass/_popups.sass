@@ -1,0 +1,161 @@
+// created by E.G.
+.has-open-popup
+	overflow: hidden
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 200
+	background: #000 
+	background: rgba(#000614,.6)
+	overflow: auto
+	+vertical
+.popup
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin: 40px 0
+	font-size: 12px
+	border-radius: 10px
+	text-align: left
+	+box
+	width: 435px 
+	border-radius: 5px  
+	background: #fff
+	+box-shadow(0 0 10px rgba(78,106,122,.26))
+	+background-image(linear-gradient(bottom, #f1f9ff 0%, #f1f9ff 0.49%, #fff 100%))
+	.tab-simle
+		padding: 27px 34px 0
+	.form
+		padding-bottom: 25px
+		+box-shadow(none)
+		background: none
+	.form__row
+		&.has-password
+			.form__left,
+			.form__right
+				vertical-align: top
+			.form__left
+				padding-top: 13px
+	.form__right
+		position: relative
+	.form__inner
+		padding: 0 9px 29px 
+	.form__row
+		+ .form__submit
+			margin-top: -18px
+	.select_short
+		width: 140px
+.popup__form
+	padding: 0 9px 
+.popup__in 
+	padding: 27px 35px 27px 35px 
+	.tab-simle
+		margin-bottom: 45px
+.popup__close
+	position: absolute
+	top: -30px
+	right: -38px
+	+s(fancybox-close)
+	&:active
+		margin-top: 1px
+
+.tab-simle
+	+clr
+	li
+		display: inline-block
+		margin-left: 36px
+		//vertical-align: middle
+		&:first-child
+			margin-left: 0
+		&.is-active
+			a
+				color: #182e41
+				font-size: 24px 
+				+direct-scb
+				border-color: transparent
+	a
+		display: block
+		color: #0076ab
+		text-decoration: none
+		font-size: 16px
+		border-bottom: 1px dotted
+		+tr(border .2s linear) 
+		+direct-c
+		&:hover
+			border-color: transparent 
+.tab-content
+	display: none
+
+.field
+	margin-bottom: 32px
+	+clr
+	+ .field_btn
+		margin-top: -18px
+.field__title
+	float: left
+	padding-top: 13px
+	width: 100px
+	color: #253242
+	font-size: 12px
+	min-height: 1px
+	span
+		color: #fd4052
+.field__body
+	position: relative
+	float: left
+	width: 264px
+.field__opt,
+.form__opt
+	padding-top: 7px
+	+clr
+	+justify
+	font-size: 12px
+	a
+		display: inline-block
+		font-size: 12px
+		text-align: left
+	.checkbox
+		height: 20px
+label
+	&.is-error
+		position: absolute
+		top: -16px
+		left: 0
+		color: #fd4052
+.checkbox-wrap
+	font-size: 0	 
+.checkbox
+	display: inline-block
+	width: 50%
+	vertical-align: middle
+	cursor: pointer
+	input, span
+		display: inline-block
+		vertical-align: middle
+	span
+		font-size: 12px
+		color: #253242
+		
+.soc-enter
+	font-size: 12px
+	a,span
+		display: inline-block
+		vertical-align: middle
+	span
+		margin-right: 15px
+	a
+		margin-right: 7px
+		&:active
+			position: relative
+			top: 1px
+.soc-enter__fb
+	+s(enter-fb)
+.soc-enter__vk
+	+s(enter-vk)
+.popup__footer
+	padding: 19px 16px 7px 
+	border-top: 1px solid #d5dfe6 
