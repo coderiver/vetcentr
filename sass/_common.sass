@@ -133,7 +133,9 @@ a
 		&:before
 			display: none
 		&:after
-			display: none		
+			display: none
+	+r(w1280)
+		font-size: 13px				
 .submit
 	position: relative
 	display: inline-block
@@ -335,6 +337,8 @@ a
 	padding-top: 20px
 	.subscribe
 		margin-bottom: 6px
+	+r(w1280)
+		width: auto	
 .header__tools
 	text-align: center
 	font-style: italic		
@@ -350,14 +354,18 @@ a
 	width: 187px
 	padding-top: 20px
 	.header__tools
-		color: #d96d0b 
+		color: #d96d0b
+	+r(w1280)
+		width: auto	 
 .header__mid
 	overflow: hidden
 	text-align: center
 .logo
 	display: inline-block
 	vertical-align: top
-	margin: 0 20px 
+	margin: 0 20px
+	+r(w1280)
+		margin: 0 10px  
 	a
 		display: block
 		position: relative
@@ -410,10 +418,14 @@ a
 		color: #fe7d00
 		span
 			color: #fe7d00
-			line-height: 1.3 	   	
+			line-height: 1.3
+	+r(w1280)
+		font-size: 13px		 	   	
 .m-adress__phone
 	font-size: 13px
-	font-style: italic		
+	font-style: italic
+	+r(w1280)
+		font-size: 12px		
 .to-profile
 	position: relative
 	display: block
@@ -436,6 +448,8 @@ a
 		top: 10px
 		left: 15px
 		+s(profile)
+	+r(w1280)
+		font-size: 13px	
 .nav
 	position: relative
 	height: 75px
@@ -444,6 +458,8 @@ a
 	background: #f7f8fb
 	+g(#fff, #f3f5f9)
 	+box-shadow(0 16px 19px -5px #96acc4)
+	+r(w1280)
+		margin: 0 -5px
 .nav__bot
 	position: absolute	  
 	bottom: -5px
@@ -470,10 +486,10 @@ a
 .nav__left
 	+clr
 	float: left
-	width: 178px 
+	//width: 178px 
 .nav__right
 	float: right
-	width: 178px
+	//width: 178px
 	padding-top: 9px
 .nav__mid
 	overflow: hidden
