@@ -73,7 +73,7 @@ head.ready(function() {
 		$("html").removeClass("has-open-popup");
 	});
 
-	// popups
+// popups
 	$(".js-popup-link").on("click", function(event){
 		$(".js-overlay").fadeOut(200);
 		var popup = $(this).attr("href");
@@ -147,7 +147,7 @@ head.ready(function() {
 		};
 		return false;
 	});
-	// validation form
+// validation form
 	function validate() {
 		$(".js-validate").each(function(){
 			if ($(this).length > 0) {
@@ -270,6 +270,7 @@ head.ready(function() {
 	}
 	validateEnter();
 
+// tabs
 	function tab() {
        $(".js-tab").each(function(){
             var tab_link = $(this).find("a");
