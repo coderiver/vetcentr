@@ -149,6 +149,44 @@ head.ready(function() {
 		return false;
 	});
 
+	// schedule
+	var schedule_el = $('.js-schedule'),
+			schedule_el_time_link = schedule_el.find('.schedule__time > li > a'),
+			schedule_el_time = schedule_el.find('.schedule__time > li > span'),
+			schedule_el_help = schedule_el.find('.schedule__help'),
+			schedule_el_btn = schedule_el.find('.btn-gray');
+	schedule_el_time_link.hover(function(){
+		schedule_el_help.removeClass('is-open');
+		$(this).next().addClass('is-open');
+	}, function(){});
+	schedule_el_time.hover(function(){
+		schedule_el_help.removeClass('is-open');
+		$(this).next().addClass('is-open');
+	}, function(){
+		schedule_el_help.removeClass('is-open');
+	});
+	schedule_el_help.hover(function(){}, function(){
+		schedule_el_help.removeClass('is-open');
+	});
+	schedule_el_btn.on('click', function(){
+		schedule_el_help.removeClass('is-open');
+		var text_show = $(this).data('show'), 
+			  text_hide = $(this).data('hide');
+		if (!$(this).hasClass('is-active')) {
+			$(this).addClass('is-active');
+			$(this).html(text_hide);
+			$(this).prev().addClass('is-active');
+			$(this).prev().slideDown();
+		}
+		else {
+			$(this).removeClass('is-active');
+			$(this).html(text_show);
+			$(this).prev().removeClass('is-active');
+			$(this).prev().slideUp();
+		};
+	});
+
+
 	// validation form
 	function validate() {
 		$(".js-validate").each(function(){
@@ -342,12 +380,12 @@ head.ready(function() {
 // scroll-pane
 
 	function scrollPane(){
-        if ($(".js-scroll-pane").length > 0){
-            $('.js-scroll-pane').jScrollPane({
-                reinitialise: true
-            }); 
-        }
+    if ($(".js-scroll-pane").length){
+      $('.js-scroll-pane').jScrollPane({
+        reinitialise: true
+      }); 
     }
+  }
 	
     scrollPane();
 

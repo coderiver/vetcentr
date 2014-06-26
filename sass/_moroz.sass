@@ -467,6 +467,10 @@ $cl: #253242
 		.schedule__center,
 		.schedule__right
 			border-bottom: #E1F1FA 1px solid 
+		& + .schedule__row
+			.schedule__cell
+				&.is-today
+					box-shadow: 1px 1px 0 #fff inset
 	.schedule__left,
 	.schedule__center,
 	.schedule__right
@@ -479,6 +483,10 @@ $cl: #253242
 	.schedule__right
 		width: 18%
 	.schedule__row_head
+		& + .schedule__row
+			.schedule__cell
+				&.is-today
+					box-shadow: 1px 0 0 #fff inset
 		.schedule__left,
 		.schedule__center,
 		.schedule__right
@@ -573,9 +581,6 @@ $cl: #253242
 				font-size: 14px
 				& + .schedule__help
 					width: 150px
-				&:hover
-					& + .schedule__help
-						display: block
 			>a
 				text-decoration: none
 				border-bottom: 1px dotted 
@@ -583,7 +588,6 @@ $cl: #253242
 				& + .schedule__help
 					width: 215px
 	.schedule__help
-		display: none
 		position: absolute
 		top: -10px
 		left: 50%
@@ -593,6 +597,9 @@ $cl: #253242
 		background-color: #fff
 		box-shadow: 0 1px 5px rgba(0,0,0,.3)
 		text-align: left
+		+tr(all .2s)
+		visibility: hidden
+		opacity: 0 
 		z-index: 10 
 		&:before
 			content: ""
@@ -600,6 +607,9 @@ $cl: #253242
 			top: 10px
 			left: -10px
 			+s(schedule-help-arr) 
+		&.is-open
+			visibility: visible
+			opacity: 1 
 		p
 			margin-bottom: 10px
 			span
