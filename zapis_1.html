@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>reception 1</title>
+	<title>zapis 1</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -93,7 +93,7 @@
 		<div class="steps">
 			<div class="steps__item is-active">
 				<div class="steps__number">1</div>
-				<div class="steps__title"><span>Клиники: специальность, врачи, услуги</span></div>
+				<div class="steps__title"><a href="#">Клиники: специальность, врачи, услуги</a></div>
 			</div>
 			<div class="steps__line"><i></i></div>
 			<div class="steps__item">
@@ -110,6 +110,7 @@
 				<div class="steps__number">4</div>
 				<div class="steps__title"><span>Подтверждение записи</span></div>
 			</div>
+			<a class="steps__help js-fancybox-popup" href="#instructions"><i></i><span>Как записаться на приём?</span></a>
 		</div>
 		<!-- END steps -->
 		<!-- BEGIN tabs -->
@@ -1111,7 +1112,22 @@
 	</div>
 </footer>
 <!-- END footer -->
-
+<!-- BEGIN instructions -->
+<div id="instructions" class="instructions">
+	<!-- BEGIN content -->
+	<div class="content">
+		<h1>Как записаться на приём?</h1>
+		<p><i>С нашими подсказками записаться на приём будет очень легко! Нашу пошаговую инструкции вы можете найти на каждой странице записи в правом верхнем углу! Вы всегда можете заглянуть в неё и процесс не покажется для вас сложным!</i></p>
+	</div>
+	<!-- END content -->
+	<ul class="instructions__list">
+		<li style="top: 145px; left: 20px;"><span>Шаг 1.</span>Выберите специалиста, врача или услугу</li>
+		<li style="top: 260px; left: 470px;"><span>Шаг 2.</span>Выберите время приёма</li>
+		<li style="top: 600px; left: 20px;"><span>Шаг 3.</span>Введите свои данные</li>
+		<li style="top: 745px; left: 470px;"><span>Шаг 4.</span>Вы успешно записаны на приём к врачу!</li>
+	</ul>
+</div>
+<!-- END instructions -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>

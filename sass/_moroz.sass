@@ -92,7 +92,7 @@ $cl: #253242
 	
 .steps
 	position: relative
-	padding: 25px 0 72px
+	margin: 25px 0 72px
 	font-size: 0
 	text-align: center
 	.steps__item, .steps__line
@@ -109,17 +109,14 @@ $cl: #253242
 		border-radius: 50%
 		+background-image(linear-gradient(bottom, #fbfdfd 0%, #dde7f7 100%))
 		font-size: 12px
-		z-index: 2 
 		&.is-active
 			.steps__number
 				background-color: #d98311
 				+background-image(linear-gradient(top, #f2ce45 0%, #d06312 100%))
 				color: #FFF
 				text-shadow: 0 1px 2px #aa6800 
-			.steps__title	
-				span
-					color: #246DB4
-					border-bottom: 1px dotted  
+			.steps__line-orange
+				display: block
 	.steps__number
 		display: block
 		width: 22px
@@ -133,20 +130,50 @@ $cl: #253242
 		width: 150px
 		margin: 12px -1px 0
 		overflow: hidden
-		z-index: 4 
 		i
+			position: relative
 			display: block
 			height: 6px  
 			margin: 0 -5px
 			background-color: #f3f5f9
 			box-shadow: 0 1px 0 #fff, inset 0 1px 2px rgba(137,156,171,.75)
 			+background-image(linear-gradient(bottom, #fbfdfd 0%, #dde7f7 100%))
+			z-index: 2 
+	.steps__line-orange
+		display: none
+		position: absolute
+		top: 14px
+		right: 26px
+		width: 156px
+		height: 3px
+		+g(#e5aa18, #d57510)
+		z-index: 4 
 	.steps__title
 		position: absolute
 		top: 40px
 		left: 50%
 		width: 150px
 		margin-left: -75px
+		a
+			border-bottom: 1px dotted 
+			text-decoration: none
+	.steps__help
+		position: absolute
+		top: 5px
+		right: 0
+		i, span
+			display: inline-block
+			vertical-align: middle
+		span
+			border-bottom: 1px dotted 
+			font-size: 12px
+			color: #D96A00
+			line-height: 1.2
+		i
+			position: relative
+			top: -1px
+			margin-right: 5px
+			+s(steps-help)
 
 .tabs_out
 	>.tabs__nav
@@ -378,21 +405,222 @@ $cl: #253242
 		li
 			padding-top: 10px
 
+.instructions
+	display: none
+	position: relative
+	width: 750px 
+	padding: 40px 60px 60px
+	.content
+		text-align: center
+		i
+			color: #959daa 
+	.instructions__list
+		position: relative
+		height: 982px
+		background: #FFF 
+		background: url(../img/instructions.png) no-repeat 0 0 
+		li
+			position: absolute
+			width: 200px
+			padding-left: 72px
+			+direct-c 
+			font-size: 18px
+		span
+			position: absolute
+			top: -2px
+			left: 0
+			+direct-scb
+			font-size: 20px
 
+.reception
+	.reception__details
+		margin: 0 130px 45px 
+		padding: 10px 80px
+		border-radius: 5px
+		background-color: #f9f3c9
+		font-size: 0
+		li
+			display: inline-block
+			width: 30%
+			margin-left: 5%
+			vertical-align: top
+			font-size: 12px
+			&:first-child
+				margin: 0
+		span
+			display: block
+			margin-bottom: 5px
+			+direct-cl
+			font-size: 18px
+			color: #3C2B1B 
 
+.schedule
+	display: table
+	width: 100%
+	border-radius: 5px
+	background-color: #fff
+	box-shadow: 0 5px 10px rgba(88,106,121,.26)
+	+background-image(linear-gradient(bottom, #f3f9ff 0%, #f3f9ff 0.49%, #fff 100%))
+	.schedule__row
+		display: table-row
+		.schedule__left,
+		.schedule__center,
+		.schedule__right
+			border-bottom: #E1F1FA 1px solid 
+	.schedule__left,
+	.schedule__center,
+	.schedule__right
+		display: table-cell
+		vertical-align: top
+	.schedule__left
+		width: 22%
+	.schedule__center
+		width: 60%
+	.schedule__right
+		width: 18%
+	.schedule__row_head
+		.schedule__left,
+		.schedule__center,
+		.schedule__right
+			height: 60px
+			+g(#6fbce3, #1954b1)
+			vertical-align: middle
+			text-shadow: 0 1px 2px #106bba
+			color: #FFF 
+		.schedule__left
+			padding: 0 25px
+			border-radius: 5px 0 0
+			text-align: right
+		.schedule__right
+			padding: 0 25px
+			border-radius: 0 5px 0 0
+		.schedule__table
+			border-right: 1px solid rgba(0,0,0,.3)
+			border-left: 1px solid rgba(255,255,255,.3) 
+		.schedule__cell	
+			height: 60px
+			padding: 0
+			border-left: 1px solid rgba(0,0,0,.3)
+			border-right: 1px solid rgba(255,255,255,.3) 
+			font-size: 14px
+			line-height: 1.1
+			vertical-align: middle
+			color: #fff 
+			&:first-child
+				border-left: 1px solid rgba(0,0,0,.3)
+			&.is-today
+				+g(#148bc8, #148bc8)
+				box-shadow: none
+			span
+				display: block
+	.schedule__prev, .schedule__next
+		font-size: 0
+		color: #FFF
+		text-decoration: none
+		i, span
+			display: inline-block
+			vertical-align: middle
+		span
+			font-size: 12px
+	.schedule__prev
+		i
+			margin-right: 5px
+			+s(schedule-prev)
+	.schedule__next
+		i
+			margin-left: 5px
+			+s(schedule-next)
+	.schedule__table
+		display: table
+		width: 100%
+		table-layout: fixed
+		+box
+	.schedule__cell
+		display: table-cell
+		padding: 20px 5px 30px
+		border-right: 1px solid #e1f1fa 
+		vertical-align: top	
+		text-align: center
+		&:first-child
+			border-left: 1px solid #e1f1fa 
+		&.is-today
+			background-color: #eff6fe
+			box-shadow: 1px 0 0 #fff inset
+	.schedule__day
+		+direct-c
+	.schedule__today
+		+direct-cl
+	.schedule__doctor
+		padding: 20px 40px
+	.schedule__doctor-pic
+		margin-bottom: 20px
+		img
+			display: block
+			+img
+			border-radius: 50%
+	.schedule__doctor-name
+		margin-bottom: 3px
+		+direct-c
+		font-size: 16px
+	.schedule__time
+		&.is-hide
+			display: none
+		li
+			position: relative
+			margin-bottom: 15px
+			>span
+				color: #ACADAD 	
+				font-size: 14px
+				& + .schedule__help
+					width: 150px
+				&:hover
+					& + .schedule__help
+						display: block
+			>a
+				text-decoration: none
+				border-bottom: 1px dotted 
+				font-size: 14px
+				& + .schedule__help
+					width: 215px
+	.schedule__help
+		display: none
+		position: absolute
+		top: -10px
+		left: 50%
+		margin-left: 40px
+		padding: 15px 25px
+		border-radius: 5px
+		background-color: #fff
+		box-shadow: 0 1px 5px rgba(0,0,0,.3)
+		text-align: left
+		z-index: 10 
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			left: -10px
+			+s(schedule-help-arr) 
+		p
+			margin-bottom: 10px
+			span
+				display: block
+				font-weight: bold
+	.schedule__text
+		color: #ACADAD 	
+		font-size: 14px
 
-
-
-
-
-
-
-
-
-
-
-
-
+.btn-gray
+	height: 23px
+	padding: 0 10px
+	border: 1px solid #d1d1d1
+	border-radius: 6px
+	background-color: #f7f7f7
+	+g(#fff, #efefef)
+	font-size: 12px
+	&:hover
+		+g(#f9f9f9, #f3f3f3)
+	&:active
+		+g(#d7d7d7, #fff)
 
 
 

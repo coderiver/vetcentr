@@ -63,8 +63,9 @@ head.ready(function() {
 		});
 	};
 	if (fancy_popup.length) {
-		fancy_el.fancybox({
-			padding: 0
+		fancy_popup.fancybox({
+			padding: 0,
+			margin: [50, 50, 20, 20]
 		});
 	};
 
@@ -147,6 +148,7 @@ head.ready(function() {
 		};
 		return false;
 	});
+
 	// validation form
 	function validate() {
 		$(".js-validate").each(function(){
