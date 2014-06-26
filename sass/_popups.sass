@@ -19,9 +19,10 @@
 	vertical-align: middle
 	margin: 40px 0
 	font-size: 12px
-	border-radius: 10px
+	border-radius: 10px  
 	text-align: left
 	+box
+	color: #182e41 
 	width: 435px 
 	border-radius: 5px  
 	background: #fff
@@ -55,6 +56,9 @@
 	padding: 27px 35px 27px 35px 
 	.tab-simle
 		margin-bottom: 45px
+	.field
+		&:last-child
+			margin-bottom: 22px
 .popup__close
 	position: absolute
 	top: -30px
@@ -62,7 +66,17 @@
 	+s(fancybox-close)
 	&:active
 		margin-top: 1px
-
+.popup__head
+	margin-bottom: 21px
+.popup__title
+	margin-bottom: 10px
+	font-size: 24px
+	+direct-scb
+.popup__info
+	line-height: 1.5
+	color: #959daa
+	font-size: 12px
+	font-style: italic 
 .tab-simle
 	+clr
 	li
@@ -92,12 +106,13 @@
 
 .field
 	margin-bottom: 32px
-	+clr
+	display: table
+	width: 100%
 	+ .field_btn
-		margin-top: -18px
+		margin-top: -6px
 .field__title
-	float: left
-	padding-top: 13px
+	display: table-cell
+	vertical-align: middle
 	width: 100px
 	color: #253242
 	font-size: 12px
@@ -106,7 +121,8 @@
 		color: #fd4052
 .field__body
 	position: relative
-	float: left
+	display: table-cell
+	vertical-align: middle
 	width: 264px
 .field__opt,
 .form__opt
@@ -159,3 +175,25 @@ label
 .popup__footer
 	padding: 19px 16px 7px 
 	border-top: 1px solid #d5dfe6 
+.popup__finish
+	padding: 30px 0 0
+	line-height: 1.7
+	text-align: center
+	p
+		margin-bottom: 20px
+	a
+		color: #ff8a00 
+		&:hover
+			color: $orange 
+.info__answer
+	li
+		position: relative
+		padding-left: 36px
+		&:before
+			content: ""
+			position: absolute
+			top: 7px
+			left: 0
+			width: 18px
+			height: 1px
+			background: #182e41  
