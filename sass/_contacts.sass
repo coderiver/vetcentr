@@ -1,6 +1,97 @@
 .contacts-wrap	
+	margin: 31px 0 45px
 	text-align: center
 .contact
+	position: relative
 	display: inline-block
+	padding: 10px 0 
+	margin-left: 55px
 	width: 445px
-	text-align: left
+	text-align: left  
+	font-size: 13px
+	color: #182e41   
+	overflow: hidden
+	&:first-child
+		margin-left: 0
+	&:last-child
+		&:after 
+			display: none
+	&:after
+		content: "" 
+		position: absolute
+		top: 25px
+		right: -40px
+		bottom: 5px
+		width: 40px  
+		-webkit-border-radius: 100% 
+		border-radius: 100% 
+		+box-shadow(0 0 36px 10px #d1dce9)
+.contact__title
+	font-size: 20px
+	+direct-scb
+	a
+		border-bottom: 1px dotted #009bf2 
+		color: #0c90cd
+		text-decoration: none
+		+tr(all .2s linear)
+		&:hover
+			color: #ff7b00 
+			border-color: #ff7b00
+.contact__list
+	line-height: 2.3
+	li
+		position: relative
+		+clr
+	a
+		color: #006db2 
+.contact__icon
+	float: left
+	width: 30px
+	margin-right: 5px
+	text-align: center
+	i
+		display: inline-block
+.contact__info
+	overflow: hidden
+.icon-tel
+	+s(cont-tel)
+.icon-email
+	+s(cont-email)
+.icon-clock
+	+s(cont-clock)
+.contact__note
+	font-size: 12px
+	font-style: italic
+	color: #8e9ca8 
+	
+.map-wrap
+	position: relative
+	margin: 45px 0 
+	
+	&:after
+		content: ""
+		position: absolute
+		bottom: 13px
+		left: 50%
+		margin-left: -250px
+		height: 50px
+		width: 500px 
+		border-radius: 100% 
+		+box-shadow(0 0 20px 30px #d1dce9)
+.map
+	position: relative
+	z-index: 2
+	padding: 3px
+	height: 350px
+	+box
+	border-radius: 5px 
+	background: #fff 
+	+box-shadow(0 4px 5px #d1dce9, 1px 0 4px #d1dce9, -1px 0 4px #d1dce9)
+.map__in
+	width: 100%
+	height: 100%
+.ie8
+	.map-wrap
+		border: 1px solid #ccc
+.to-center
+	text-align: center

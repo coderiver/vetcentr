@@ -266,6 +266,10 @@ head.ready(function() {
 						},
 						email: "",
 						address: "",
+						workplace: "",
+						edu: "",
+						status: "",
+						exp: "",
 						tel: {
 							required: "",
 							phoneUS: ""

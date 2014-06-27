@@ -82,17 +82,18 @@
 	li
 		display: inline-block
 		margin-left: 36px
+		max-width: 100px 
 		//vertical-align: middle
 		&:first-child
 			margin-left: 0
 		&.is-active
+			max-width: 100%
 			a
 				color: #182e41
 				font-size: 24px 
 				+direct-scb
 				border-color: transparent
 	a
-		display: block
 		color: #0076ab
 		text-decoration: none
 		font-size: 16px
@@ -197,3 +198,9 @@ label
 			width: 18px
 			height: 1px
 			background: #182e41  
+
+.input_textarea
+	border: 0
+	padding: 15px
+	height: 90px
+	resize: none
