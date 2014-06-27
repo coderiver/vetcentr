@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>6 ad</title>
+	<title>account</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -280,121 +280,68 @@
 	</header>
 	<!-- END header -->
 	<!-- BEGIN layout -->
-	<div class="l-layout l-layout_medium l-layout_inverse">
-		<!-- BEGIN breadcrumbs -->
-		<ul class="breadcrumbs">
-			<li><a href="#">Главная</a></li>
-		</ul>
-		<!-- END breadcrumbs -->
-		<!-- BEGIN title -->
-		<div class="title">
-			<div class="title__text">Поиск по сайту</div>
-		</div>
-		<!-- END title -->
+	<div class="l-layout">
 		<div class="l-aside">
-			<!-- BEGIN fact -->
-			<div class="fact fact_new-ad">
-				<div class="fact__in">
-					<div class="fact__title">Хотите разместить объявление?</div>
-					<div class="fact__text">У нас на сайте  сделать это легко!</div>
-					<button type="submit" class="submit">Новое объявление</button>
-				</div>
+			<!-- BEGIN aside-pets -->
+			<div class="aside-pets">
+				<ul>
+					<li>
+						<a href="#" class="pet is-active">
+							<div class="pet__img">
+								<img src="img/positive-cat.png" alt="">
+							</div>
+							<div class="pet__content">
+								<p>Аркадий Иммануилович</p>
+								<span>Кот</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="pet">
+							<div class="pet__img">
+								<img src="img/positive-cat.png" alt="">
+							</div>
+							<div class="pet__content">
+								<p>Джекки</p>
+								<span>Собака</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-add"><span>+ Добавить анкету питомца</span></a>
+					</li>
+				</ul>
 			</div>
-			<!-- END fact -->
-			<!-- BEGIN form -->
-			<div class="form form_search">
-				<div class="form__title">Параметры поиска</div>
-				<div class="form__inner">
-					<div class="form__row">
-						<div class="form__left">Рубрика:<span>*</span></div>
-						<div class="form__right">
-							<select class="select">
-								<option>Кот</option>
-								<option>Собаки</option>
-								<option>Грызуны</option>
-								<option>Хорьки</option>
-								<option>Рептилии</option>
-								<option>Птицы</option>
-							</select>
-						</div>
-					</div>
-					
-					<div class="form__row">
-						<div class="form__left">Вид животного:<span>*</span></div>
-						<div class="form__right">
-							<select class="select">
-								<option>Кот</option>
-								<option>Собаки</option>
-								<option>Грызуны</option>
-								<option>Хорьки</option>
-								<option>Рептилии</option>
-								<option>Птицы</option>
-							</select>
-						</div>
-					</div>
-					<div class="form__row">
-						<div class="form__left">Пол:<span>*</span></div>
-						<div class="form__right">
-							<select class="select">
-								<option>Кот</option>
-								<option>Собаки</option>
-								<option>Грызуны</option>
-								<option>Хорьки</option>
-								<option>Рептилии</option>
-								<option>Птицы</option>
-							</select>
-						</div>
-					</div>
-					<div class="form__row">
-						<div class="form__left">Возраст:<span>*</span></div>
-						<div class="form__right">
-							<select class="select">
-								<option>Кот</option>
-								<option>Собаки</option>
-								<option>Грызуны</option>
-								<option>Хорьки</option>
-								<option>Рептилии</option>
-								<option>Птицы</option>
-							</select>
-						</div>
-					</div>
-					<div class="form__row">
-						<div class="form__left">Город:<span>*</span></div>
-						<div class="form__right">
-							<select class="select">
-								<option>Кот</option>
-								<option>Собаки</option>
-								<option>Грызуны</option>
-								<option>Хорьки</option>
-								<option>Рептилии</option>
-								<option>Птицы</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="form__submit">
-					<button type="submit" class="submit">Подобрать</button>
-				</div>
-				<div class="form__reset">
-					<a href="#"><i></i><span>Сбросить параметры</span></a>
-				</div>
-			</div>
-			<!-- END form -->
+			<!-- END aside-pets -->
+			<!-- BEGIN aside-nav -->
+			<nav class="aside-nav">
+				<ul>
+					<li class="is-active"><a href="#">Редактировать данные<i></i></a></li>
+					<li><a href="#">Мои объявления<i></i></a></li>
+					<li><a href="#">Мои записи к врачу<i></i></a></li>
+				</ul>
+			</nav>
+			<!-- END aside-nav -->
 		</div>
 		<div class="l-section">
 			<div class="l-section__in">
-				<!-- BEGIN find -->
-				<div class="find">
-					<div class="find__field">
-						<form>
-							<input type="text" class="input js-search" placeholder="Поиск на сайте">
-							<button type="reset" class="find__reset js-reset"></button>
-						</form>
-					</div>
-					<button type="submit" class="submit submit_blue">Найти</button>
+				<!-- BEGIN breadcrumbs -->
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+				</ul>
+				<!-- END breadcrumbs -->
+				<!-- BEGIN title -->
+				<div class="title">
+					<div class="title__text">Личный кабинет</div>
 				</div>
-				<!-- END find -->
-				<!-- BEGIN types -->
+				<!-- END title -->
+				<!-- BEGIN ads -->
+				<div class="ads">
+					<div class="ads__topper">
+						<div class="ads__title">Мои объявления</div>
+						<button type="button" class="submit">Новое объявление</button>
+					</div>
+					<!-- BEGIN types -->
 				<div class="types">
 					<div class="types__in">
 						<a class="types__link is-active" href="#">Все</a>
@@ -530,6 +477,8 @@
 					</div>
 				</div>
 				<!-- END pager -->
+				</div>
+				<!-- END ads -->
 			</div>
 		</div>
 	</div>
@@ -537,7 +486,7 @@
 	<div class="push"></div>
 </div>
 <!-- END out-->
-<!-- BEGIN footer -->  
+<!-- BEGIN footer -->
 <footer class="footer">
 	<div class="footer__topper">
 		<div class="l-center">
