@@ -286,7 +286,7 @@
 			<div class="aside-pets">
 				<ul>
 					<li>
-						<a href="#" class="pet">
+						<a href="#" class="pet is-active">
 							<div class="pet__img">
 								<img src="img/positive-cat.png" alt="">
 							</div>
@@ -308,7 +308,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="add"></a>
+						<a href="#" class="link-add"><span>+ Добавить анкету питомца</span></a>
 					</li>
 				</ul>
 			</div>
@@ -328,20 +328,18 @@
 				<!-- BEGIN breadcrumbs -->
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная</a></li>
-					<li><a href="#">Карьера</a></li>
-					<li><a href="#">В клинику Антистресс требуется медицинская сестра</a></li>
 				</ul>
 				<!-- END breadcrumbs -->
 				<!-- BEGIN title -->
 				<div class="title">
-					<div class="title__text">Ваше резюме</div>
+					<div class="title__text">Личный кабинет</div>
 				</div>
 				<!-- END title -->
 				<!-- BEGIN vacancy -->
-				<div class="vacancy">
+				<div class="account">
 					<!-- form -->
 					<div class="form">
-						<div class="form__title">Отправить резюме</div>
+						<div class="form__title">Личные данные</div>
 						<form class="js-validate">
 							<div class="form__inner">
 								<label class="form__row">  
@@ -374,52 +372,35 @@
 										<input type="text" class="input" required name="tel">
 									</span>
 								</label>
-								<label class="form__row">  
-									<span class="form__left">Образование<span>*</span></span>
+								<label class="form__row form__row_adress">  
+									<span class="form__left">Адрес<span>*</span></span>
 									<span class="form__right">
-										<input type="text" class="input" required name="edu">
-									</span>
-								</label>
-								<label class="form__row">
-									<span class="form__left">Год окончания<span>*</span></span>
-									<span class="form__right">
-										<select class="select">
-											<option>2013</option>
-											<option>2012</option>
-											<option>2011</option>
-											<option>2010</option>
-											<option>2009</option>
-											<option>2010</option>
-										</select>
+										<input type="text" class="input input_city" required name="" placeholder="район">
+										<input type="text" class="input input_district" required name="" placeholder="нас. пункт">
 									</span>
 								</label>
 								<label class="form__row">  
-									<span class="form__left">Предыдущее место работы, должность<span>*</span></span>
+									<span class="form__left"></span>
 									<span class="form__right">
-										<input type="text" class="input" required name="workplace">
-										<a href="#" class="form__add"><span>+ Добавить место работы</span></a>
+										<input type="text" class="input input_street" required name="" placeholder="улица">
+										<input type="text" class="input input_house" required name="" placeholder="дом">
+										<input type="text" class="input input_flat" required name="" placeholder="квартира">
 									</span>
 								</label>
 								<label class="form__row">  
-									<span class="form__left">Семейное положение<span>*</span></span>
+									<span class="form__left">Новый пароль<span>*</span></span>
 									<span class="form__right">
-										<input type="text" class="input" required name="status">
+										<input type="password" class="input" required name="tel">
 									</span>
 								</label>
 								<label class="form__row">  
-									<span class="form__left">Место жительства, регистрация<span>*</span></span>
+									<span class="form__left">Подтвердите пароль<span>*</span></span>
 									<span class="form__right">
-										<input type="text" class="input" required name="address">
-									</span>
-								</label>
-								<label class="form__row">  
-									<span class="form__left">Опыт работы<span>*</span></span>
-									<span class="form__right">
-										<input type="text" class="input" required name="exp">
+										<input type="password" class="input" required name="tel">
 									</span>
 								</label>
 								<div class="form__submit">
-									<button type="submit" class="submit">Опыт работы</button>
+									<button type="submit" class="submit">Сохранить</button>
 								</div>
 							</div>
 						</form>
@@ -427,11 +408,6 @@
 					<!-- /form -->
 				</div>
 				<!-- END vacancy -->
-				<!-- BEGIN back -->
-				<div class="back">
-					<a href="#"><i></i><span>Вернуться ко всем новостям</span></a>
-				</div>
-				<!-- END back -->
 			</div>
 		</div>
 	</div>

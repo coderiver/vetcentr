@@ -68,7 +68,7 @@ a
 	height: 100%
 	margin: 0 auto -243px
 	background: #f2f6fa
-	+background-image(linear-gradient(bottom, #fff 0%, #e3ebf4 88.25%, #fff 95.75%, #fff 100%))
+	+background-image(linear-gradient(bottom, #fff 0%, #fff 75%, #e3ebf4 85.25%, #fff 96.75%, #fff 100%))
 .push
 	height: 243px		
 
@@ -252,6 +252,8 @@ a
 	display: table
 	width: 100% 
 	margin-bottom: 32px
+	&.form__row_adress
+		margin-bottom: 16px 	
 .form__left
 	display: table-cell
 	vertical-align: middle
@@ -269,7 +271,7 @@ a
 	margin-top: 26px
 	padding-top: 29px
 	border-top: 1px solid #d7dee5
-.form__add
+.link-add
 	display: inline-block
 	font-size: 12px
 	color: #959daa
@@ -300,7 +302,29 @@ a
 		color: #fd4052
 	&.input_short
 		width: 113px 	
-		
+	&.input_city
+		width: 46%
+		margin-right: 4%
+		+placeholder
+			font-style: italic
+	&.input_district
+		width: 48%
+		+placeholder
+			font-style: italic
+	&.input_street
+		width: 35%
+		margin-right: 3%
+		+placeholder
+			font-style: italic
+	&.input_house
+		width: 25%
+		margin-right: 4%
+		+placeholder
+			font-style: italic
+	&.input_flat
+		width: 30%
+		+placeholder
+			font-style: italic	  	 		
 .select
 	width: 100%
 	&.select_short
