@@ -1,0 +1,62 @@
+// created by E.G.
+.service-wrap
+	margin-bottom: 40px
+.fact_center
+	text-align: center 
+	.fact__in
+		padding: 15px 15px 40px 
+	.submit
+		margin: 16px 0 0 
+		padding: 0
+.service
+	display: inline-block
+	vertical-align: top
+	margin: 0 77px 45px 0
+	width: 140px
+	text-align: center
+	&:hover
+		.service__img
+			+box-shadow(0 0 0 4px #e98500)
+		.service__name
+			color: #e98500 
+.service__img
+	display: block
+	margin: 0 0 21px 
+	width: 140px
+	height: 140px
+	text-align: center
+	line-height: 140px
+	border-radius: 50% 
+	background: #ebf6fe
+	+box
+	+tr(all .2s linear)
+	border: 3px solid #fff 
+	+box-shadow(0 2px 5px rgba(49, 86, 122, 0.4))
+	img
+		vertical-align: middle
+.aside-nav
+	ul
+		ul
+			padding: 8px 0 0 20px
+			line-height: 2.5
+			font-size: 12px
+			a
+				color: #182e41 
+				&:hover
+					color: $orange
+					
+.links
+	margin-bottom: 55px
+	+column-count(4)
+	+column-gap(40px)
+	font-size: 14px
+	line-height: 2.1
+	a
+		color: #182e41
+		&:hover
+			color: $orange   
+	ul
+		font-size: 12px
+		line-height: 2
+		a
+			color: #006db8
