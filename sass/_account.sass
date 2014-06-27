@@ -1,5 +1,6 @@
 // styles for account pages
 .aside-pets
+    margin-bottom: 40px
     ul
         li
             margin-bottom: 20px       
@@ -11,6 +12,17 @@
     text-decoration: none
     +box-shadow(0 2px 4px #c1c7cd)
     +background-image(linear-gradient(top, #fff 0%, #f6f6f6 100%))
+    +tr(background 200ms)
+    &:hover
+        background: #f8f8f8 
+        +background-image(linear-gradient(bottom, #fff 0%, #f6f6f6 100%))
+    &.is-active
+        background: #fcf5c8
+        color: #db751a
+        +box-shadow(0 0 1px 1px #f3e9a4)
+        .pet__content
+            p
+                color: #db751a         
 .pet__img
     float: left
     width: 80px
