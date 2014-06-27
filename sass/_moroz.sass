@@ -807,6 +807,125 @@ $cl: #253242
 	.form
 		width: 430px
 
+.types
+	display: table
+	width: 100%
+	margin-bottom: 20px
+	+g(#30b8e5, #074cbe)
+	border-radius: 5px
+	+clr
+	.types__in
+		display: table-row
+	.types__link
+		display: table-cell
+		height: 42px
+		padding: 0 20px
+		border-left: 1px solid rgba(0,0,0,.3)
+		border-right: 1px solid rgba(255,255,255,.3) 
+		vertical-align: middle
+		+direct-c
+		font-size: 16px
+		text-shadow: 0 1px 2px #106bba
+		color: #FFF
+		text-decoration: none
+		text-align: center
+		box-sizing: border-box
+		&:hover
+			+g(#108ed2, #167ed7)
+		&.is-active
+			background: #148bc8
+		&:first-child
+			border-left: none
+			border-radius: 5px 0 0 5px
+		&:last-child
+			border-radius: 0 5px 5px 0
+
+.sort
+	margin-bottom: 25px
+	padding-bottom: 15px
+	border-bottom: #E1E5EA 1px solid 
+	+clr
+	.sort__title, .sort__list
+		float: left
+	.sort__title
+		margin: 3px 18px 0 0
+	.sort__list
+		a
+			position: relative
+			float: left
+			margin-right: 2px
+			padding: 3px 20px 3px 10px
+			border-radius: 3px
+			&.is-active
+				background: #faf4ca
+				color: #D3740E 
+				text-decoration: none
+				cursor: default
+				&:after
+					content: ""
+					position: absolute
+					top: 8px
+					right: 8px
+					+arr(5,4,#d3740e,b)
+				
+.ad
+	margin-bottom: 40px
+	.ad__list
+		display: table
+		width: 100%
+	.ad__item
+		display: table-row
+		&:first-child
+			.ad__cell
+				padding: 0 20px 23px 0 
+			.ad__price
+				padding-top: 30px
+	.ad__cell
+		display: table-cell
+		padding: 23px 20px 23px 0
+		border-bottom: 1px dashed #dadada 
+		vertical-align: top
+		&:first-child
+			width: 104px 
+	.ad__price
+		padding-top: 53px
+		font-weight: bold
+		text-align: center
+		white-space: nowrap
+	.ad__pic
+		width: 98px 
+		height: 68px
+		+link-img
+	.ad__head
+		margin-bottom: 5px
+		+clr
+	.ad__title
+		float: left
+		margin-top: 1px
+	.ad__label
+		float: left
+		padding: 1px 8px
+		margin-right: 10px
+		border-radius: 3px
+		color: #FFF 
+		font-size: 10px
+	.ad__label_give
+		background: #e98500
+	.ad__label_buy
+		background: #f86868 
+	.ad__label_sail
+		background: #029709 
+	.ad__label_get	
+		background: #9037a6 
+	.ad__label_found
+		background: #1993d9 
+	.ad__label_lost
+		background: #f3d900 
+	.ad__text
+		margin-bottom: 5px
+		line-height: 1.6
+		
+		
 
 
 
