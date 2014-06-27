@@ -172,22 +172,28 @@
 		content: ""
 		position: absolute
 		top: -39px
-		width: 100%
+		left: 0
+		right: 0
 		height: 24%
 		box-shadow: 0 0 100px 100px #d5ebf7
 		border-radius: 50%
 .banners_list
 	font-size: 0
 	white-space: nowrap
+	text-align: center
 	.banners__item
 		position: relative
 		width: 25%
-		padding: 0 5px
-		box-sizing: border-box
-		+link-img
+	.banners__link
+		width: auto
+		height: auto
+		margin: 0 5px
+		+tr(box-shadow .2s)
 		img
-			width: 100%
-			border-radius: 14px
+			display: block
+			height: auto
+		&:hover
+			box-shadow: 0 2px 9px rgba(49,86,122,.67)
 .banners__slider
 	font-size: 0
 	width: 100%
@@ -232,7 +238,6 @@
 	position: relative
 	background: #fff
 	margin-bottom: 55px
-	
 .benefits__title
 	margin-bottom: 35px
 	+direct-scb
