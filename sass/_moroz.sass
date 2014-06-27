@@ -406,6 +406,7 @@ $cl: #253242
 			padding-top: 10px
 
 .instructions
+	display: none
 	position: relative
 	width: 750px 
 	padding: 40px 60px 60px
@@ -456,6 +457,14 @@ $cl: #253242
 		width: 780px
 		margin: 0 auto
 		+clr
+	.reception__layout_mod
+		position: relative
+		text-align: center
+		.reception__info
+			float: none
+			display: inline-block
+			margin-bottom: 36px
+			vertical-align: top
 	.reception__info	
 		position: relative
 		float: left
@@ -493,7 +502,8 @@ $cl: #253242
 		margin-bottom: 15px
 		font-size: 14px
 	.reception__info-doctor,
-	.reception__info-hospital
+	.reception__info-hospital,
+	.reception__info-data
 		margin-bottom: 5px
 		font-size: 14px
 		font-weight: bold
@@ -521,6 +531,10 @@ $cl: #253242
 		span
 			text-decoration: underline
 			font-size: 12px
+	.reception__info-man, 
+	.reception__info-animal
+		font-size: 14px
+		font-style: italic
 	.reception__form
 		float: right
 		width: 435px 
@@ -535,6 +549,57 @@ $cl: #253242
 				font-size: 16px
 				text-decoration: none
 				line-height: 1.1
+	.reception__personal	
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: 180px
+		width: 285px
+		&:after
+			content: ""
+			position: absolute
+			right: 25px
+			left: 30px
+			bottom: 10px
+			height: 20px
+			box-shadow: 0 0 20px 20px #c4ccd2 
+			+rotate(4)
+			z-index: 2
+	.reception__personal-in	
+		position: relative
+		padding: 20px 25px 35px 50px 
+		background-color: #f3f7fd
+		text-align: left
+		z-index: 4 
+		&:before
+			content: ""
+			position: absolute
+			top: -3px
+			left: 20px
+			+s(reception-personal-ico)
+	.reception__personal-text
+		margin-bottom: 15px
+		line-height: 1.6
+		color: #959DAA
+		font-style: italic 
+	.reception__personal-btn
+		margin-bottom: 15px 
+	.reception__success
+		margin-bottom: 45px
+		text-align: center
+		font-size: 0
+		i, span
+			display: inline-block
+			vertical-align: middle
+		span
+			+direct-scb
+			font-size: 24px
+		i
+			margin-right: 14px
+			+s(reception-success)
+	.reception__print
+		text-align: center
+
 
 .schedule
 	display: table
@@ -702,8 +767,7 @@ $cl: #253242
 		font-size: 14px
 
 .btn-gray
-	height: 23px
-	padding: 0 10px
+	padding: 3px 10px
 	border: 1px solid #d1d1d1
 	border-radius: 6px
 	background-color: #f7f7f7
@@ -713,7 +777,12 @@ $cl: #253242
 		+g(#f9f9f9, #f3f3f3)
 	&:active
 		+g(#d7d7d7, #fff)
-
+	i
+		display: inline-block
+		margin: 4px 8px 4px 0
+		vertical-align: middle
+	.btn-gray__print
+		+s(btn-gray-print)
 	
 
 
