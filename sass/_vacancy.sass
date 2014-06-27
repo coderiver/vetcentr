@@ -1,6 +1,53 @@
 // styles for vacancy pages
+.vacancy
+    margin-bottom: 60px
+    .form
+        width: 430px
 .fact_blue
     .fact__in
         +g(#cce7fd, #fff)       
     .phone
         margin-top: 10px
+.vacancy__list
+    padding: 20px 0 75px
+    border-bottom: 1px dashed #dadada
+    margin-bottom: 18px  
+    li
+        margin-bottom: 25px
+        a
+            +direct-c
+            font-size: 20px
+            color: #528fca
+            &:hover
+                color: #e98500
+                text-decoration: none
+.vacancy__contact
+    p
+        margin-bottom: 8px
+.vacancy__item 
+    border-bottom: 1px dashed #dadada
+    margin-bottom: 18px                                
+.vacancy__details
+    margin-bottom: 30px
+    ul
+        padding: 0 15px
+        li
+            position: relative
+            padding-left: 32px
+            margin-top: 15px
+            font-size: 12px
+            &:before
+                content: ""
+                position: absolute
+                top: 3px
+                left: 0
+                width: 7px
+                height: 7px
+                border-radius: 50%
+                background: #0a589b
+.vacancy__head
+    font-size: 20px
+    +direct-c
+.vacancy__btn
+    padding: 45px 0                       
+                 

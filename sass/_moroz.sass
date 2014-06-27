@@ -406,7 +406,6 @@ $cl: #253242
 			padding-top: 10px
 
 .instructions
-	display: none
 	position: relative
 	width: 750px 
 	padding: 40px 60px 60px
@@ -453,6 +452,89 @@ $cl: #253242
 			+direct-cl
 			font-size: 18px
 			color: #3C2B1B 
+	.reception__layout
+		width: 780px
+		margin: 0 auto
+		+clr
+	.reception__info	
+		position: relative
+		float: left
+		width: 295px 
+		&:after
+			content: ""
+			position: absolute
+			right: 25px
+			left: 30px
+			bottom: 10px
+			height: 20px
+			box-shadow: 0 0 20px 20px #d9d5cf 
+			+rotate(4)
+			z-index: 2
+	.reception__info-in	
+		position: relative
+		padding: 25px 25px 45px 
+		background-color: #f5f0e9
+		+g(#f7f3ec, #fff)
+		text-align: center
+		z-index: 4 
+	.reception__info-title
+		margin-bottom: 15px
+		+direct-c
+		font-size: 18px	 
+	.reception__info-date
+		+direct-scb
+		font-size: 16px
+	.reception__info-time
+		margin-bottom: 15px
+		font-size: 28px
+		color: #DA8412 
+		font-weight: bold 
+	.reception__info-type
+		margin-bottom: 15px
+		font-size: 14px
+	.reception__info-doctor,
+	.reception__info-hospital
+		margin-bottom: 5px
+		font-size: 14px
+		font-weight: bold
+	.reception__info-profession,
+	.reception__info-address
+		margin-bottom: 15px
+		font-style: italic
+		color: #959daa
+	.reception__info-change
+		text-align: center
+		a
+			font-size: 0
+			text-decoration: none
+			&:hover
+				span
+					text-decoration: none 
+		i, span
+			display: inline-block
+			vertical-align: middle
+		i
+			position: relative
+			top: -1px
+			margin-right: 5px
+			+s(reception-info-change)
+		span
+			text-decoration: underline
+			font-size: 12px
+	.reception__form
+		float: right
+		width: 435px 
+		.form__title
+			text-align: left
+			+clr
+			a
+				float: right
+				margin-top: 8px
+				border-bottom: 1px dotted 
+				+direct-c
+				font-size: 16px
+				text-decoration: none
+				line-height: 1.1
 
 .schedule
 	display: table
@@ -466,7 +548,7 @@ $cl: #253242
 		.schedule__left,
 		.schedule__center,
 		.schedule__right
-			border-bottom: #E1F1FA 1px solid 
+			border-bottom: #E1F1FA 1px solid
 		& + .schedule__row
 			.schedule__cell
 				&.is-today
@@ -632,7 +714,7 @@ $cl: #253242
 	&:active
 		+g(#d7d7d7, #fff)
 
-
+	
 
 
 
