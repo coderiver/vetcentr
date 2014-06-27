@@ -26,17 +26,18 @@
 		color: #246db4
 
 .title
-	margin-bottom: 20px
+	margin-bottom: 30px
 	padding-bottom: 8px
 	border-bottom: #CAD5E5 1px solid 
 	+clr
-	
 	.title__text
 		display: table
 		+direct-scb
 		font-size: 24px
 .title__link-subscribe
-	+s(title-link-subscribe)		
+	+s(title-link-subscribe)	
+.title__link-print
+	+s(title-link-print)		
 .title__link, .rss
 	margin-left: 20px
 	font-size: 0
@@ -53,6 +54,7 @@
 .title__link
 	float: right
 	padding-top: 12px		
+	
 .aside-nav
 	padding: 20px 15px 20px 20px
 	margin-bottom: 50px
@@ -298,7 +300,26 @@
 		font-weight: bold 
 		color: #54402D
 
-			
+.callus
+	position: relative
+	max-width: 315px
+	padding: 15px 15px 15px 45px
+	border: 1px dashed #c0c9d8
+	border-radius: 10px
+	font-style: italic
+	color: #959daa
+	line-height: 1.6
+	&:before
+		content: ""
+		position: absolute
+		top: 15px
+		left: 20px
+		+s(callus)
+	.callus__phone
+		margin-bottom: 40px
+		color: #000
+		span
+			font-weight: bold 
 
 
 

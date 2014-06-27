@@ -784,7 +784,28 @@ $cl: #253242
 	.btn-gray__print
 		+s(btn-gray-print)
 	
-
+.calldoc
+	+clr
+	.calldoc__left
+		float: left
+		width: 480px
+		margin-right: 30px 
+	.calldoc__right
+		display: table
+	.calldoc__success
+		position: relative
+		padding-left: 35px
+		margin-bottom: 40px
+		font-weight: bold
+		line-height: 1.6
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(calldoc-success)
+	.form
+		width: 430px
 
 
 
