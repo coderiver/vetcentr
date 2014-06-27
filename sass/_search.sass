@@ -1,0 +1,95 @@
+.find
+    position: relative
+    margin-top: 32px
+    .submit
+        vertical-align: middle
+        margin-left: 12px
+        min-width: 93px
+.find__field
+    position: relative
+    width: 507px
+    height: 40px
+    display: inline-block
+    vertical-align: middle
+    .input
+        padding: 0 35px 
+    &:before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 13px
+        margin-top: -7px
+        +s(glass-blue)   
+.find__reset
+    position: absolute
+    top: 50%
+    right: 11px
+    margin-top: -7px
+    +s(reset-blue) 
+.find__sort
+    padding-top: 11px
+    font-size: 12px
+    color: #006db8
+    a
+        display: inline-block
+        padding: 3px 9px 
+        margin-right: 9px
+        text-decoration: none
+        &.is-active
+            background: #005ba3
+            border-radius: 4px  
+            span
+                border-color: transparent
+                color: #fff  
+        &:hover
+            span
+                border-color: transparent 
+    span
+        border-bottom: 1px dotted 
+        color: #006db8 
+        +tr(all .2s linear)
+.find__result
+    margin-top: 34px
+    color: #182e41 
+.result-list
+    margin: 40px 0
+    counter-reset: list-result
+.result
+    position: relative
+    margin-bottom: 30px
+    padding-left: 25px
+    &:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        font-size: 16px
+        font-weight: bold
+        counter-increment: list-result  
+        content: counter(list-result) ". "
+.result__title
+    margin-bottom: 9px
+    +direct-c
+    font-size: 18px
+    a
+        color: #0c90cd
+.result__text
+    margin: 9px 0 
+    font-size: 12px
+    color: #323d46 
+    span
+        color: #ff8600 
+.result__categ
+    font-size: 12px
+    font-style: italic
+    a
+        display: inline-block
+        position: relative
+        color: #8e9ca8
+        text-decoration: none  
+        &:hover
+            text-decoration: underline
+        &:after
+            display: inline-block
+            margin: 0 2px 0 5px
+            content: "/"  
