@@ -327,56 +327,83 @@
 					<!-- form -->
 					<div class="form">
 						<div class="form__title">Отправить резюме</div>
-						<form>
+						<form class="js-validate">
 							<div class="form__inner">
 								<label class="form__row">  
-									<div class="form__left">Имя<span>*</span></div>
-									<div class="form__right">
-										<input type="text" class="input">
-									</div>
+									<span class="form__left">Имя<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="firstname">
+									</span>
 								</label>
 								<label class="form__row">  
-									<div class="form__left">Фамилия<span>*</span></div>
-									<div class="form__right">
-										<input type="text" class="input is-error">
-									</div>
+									<span class="form__left">Фамилия<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="lastname">
+									</span>
 								</label>
 								<label class="form__row">  
-									<div class="form__left">Отчество<span>*</span></div>
-									<div class="form__right">
-										<input type="text" class="input">
-									</div>
+									<span class="form__left">Отчество<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="fathername">
+									</span>
+								</label>
+								<label class="form__row">  
+									<span class="form__left">E-mail<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="email">
+									</span>
+								</label>
+								<label class="form__row">  
+									<span class="form__left">Телефон<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="tel">
+									</span>
+								</label>
+								<label class="form__row">  
+									<span class="form__left">Образование<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="edu">
+									</span>
 								</label>
 								<label class="form__row">
-									<div class="form__left">Вид животного<span>*</span></div>
-									<div class="form__right">
+									<span class="form__left">Год окончания<span>*</span></span>
+									<span class="form__right">
 										<select class="select">
-											<option>Кот</option>
-											<option>Собаки</option>
-											<option>Грызуны</option>
-											<option>Хорьки</option>
-											<option>Рептилии</option>
-											<option>Птицы</option>
+											<option>2013</option>
+											<option>2012</option>
+											<option>2011</option>
+											<option>2010</option>
+											<option>2009</option>
+											<option>2010</option>
 										</select>
-									</div>
+									</span>
 								</label>
-								<label class="form__row">
-									<div class="form__left">Вид животного<span>*</span></div>
-									<div class="form__right">
-										<div class="radio-wrap">
-											<label class="radio">
-												<input type="radio" name="sex">
-												<span>Самка</span>
-											</label>
-											<label class="radio">
-												<input type="radio" name="sex">
-												<span>Самец</span>
-											</label>
-										</div>
-									</div>
+								<label class="form__row">  
+									<span class="form__left">Предыдущее место работы, должность<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="workplace">
+									</span>
+								</label>
+								<label class="form__row">  
+									<span class="form__left">Семейное положение<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="status">
+									</span>
+								</label>
+								<label class="form__row">  
+									<span class="form__left">Место жительства, регистрация<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="address">
+									</span>
+								</label>
+								<label class="form__row">  
+									<span class="form__left">Опыт работы<span>*</span></span>
+									<span class="form__right">
+										<input type="text" class="input" required name="exp">
+									</span>
 								</label>
 								<div class="form__submit">
-									<button type="submit" class="submit">Зарегистрироваться</button>
+									<button type="submit" class="submit">Опыт работы</button>
 								</div>
 							</div>
 						</form>
