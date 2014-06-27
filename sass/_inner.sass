@@ -17,28 +17,29 @@
 	padding-bottom: 8px
 	border-bottom: #CAD5E5 1px solid 
 	+clr
-	.title__link
-		float: right
-		padding-top: 12px
-		margin-left: 20px
-		font-size: 0
-		span, i
-			display: inline-block
-			vertical-align: middle
-		span
-			padding-top: 1px
-			font-size: 12px
-			color: $orange
-			text-decoration: underline
-		i
-			margin-right: 10px
-	.title__link-subscribe
-		+s(title-link-subscribe)
+	
 	.title__text
 		display: table
 		+direct-scb
 		font-size: 24px
-
+.title__link-subscribe
+	+s(title-link-subscribe)		
+.title__link, .rss
+	margin-left: 20px
+	font-size: 0
+	span, i
+		display: inline-block
+		vertical-align: middle
+	span
+		padding-top: 1px
+		font-size: 12px
+		color: $orange
+		text-decoration: underline
+	i
+		margin-right: 10px
+.title__link
+	float: right
+	padding-top: 12px		
 .aside-nav
 	padding: 20px 15px 20px 20px
 	margin-bottom: 50px
