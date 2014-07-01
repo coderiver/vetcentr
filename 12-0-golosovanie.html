@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>account</title>
+	<title>12-0 golosovanie</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -19,7 +19,7 @@
 					<div class="header__tools">или <a href="#" class="header__link">вызвать врача</a> на дом</div>
 				</div>
 				<div class="header__right">
-					<div class="to-profile"><a href="#">Личный кабинет</a></div>
+					<a href="#" class="to-profile"><span>Личный кабинет</span></a>
 					<div class="header__tools"><a href="#" class="header__link">войти</a> / <a href="#" class="header__link">зарегистрироваться</a></div>
 				</div>
 				<div class="header__mid">
@@ -280,199 +280,104 @@
 	</header>
 	<!-- END header -->
 	<!-- BEGIN layout -->
-	<div class="l-layout">
-		<div class="l-aside">
-			<!-- BEGIN aside-pets -->
-			<div class="aside-pets">
-				<ul>
-					<li>
-						<a href="#" class="pet is-active">
-							<div class="pet__img">
-								<img src="img/positive-cat.png" alt="">
-							</div>
-							<div class="pet__content">
-								<p>Аркадий Иммануилович</p>
-								<span>Кот</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="pet">
-							<div class="pet__img">
-								<img src="img/positive-cat.png" alt="">
-							</div>
-							<div class="pet__content">
-								<p>Джекки</p>
-								<span>Собака</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="link-add"><span>+ Добавить анкету питомца</span></a>
-					</li>
-				</ul>
-			</div>
-			<!-- END aside-pets -->
-			<!-- BEGIN aside-nav -->
-			<nav class="aside-nav">
-				<ul>
-					<li class="is-active"><a href="#">Редактировать данные<i></i></a></li>
-					<li><a href="#">Мои объявления<i></i></a></li>
-					<li><a href="#">Мои записи к врачу<i></i></a></li>
-				</ul>
-			</nav>
-			<!-- END aside-nav -->
+	<div class="l-layout l-layout_medium">
+		<!-- BEGIN breadcrumbs -->
+		<ul class="breadcrumbs">
+			<li><a href="#">Главная</a></li>
+		</ul>
+		<!-- END breadcrumbs -->
+		<!-- BEGIN title -->
+		<div class="title">
+			<div class="title__text">Анкета качества оказываемых услуг</div>
 		</div>
-		<div class="l-section">
-			<div class="l-section__in">
-				<!-- BEGIN breadcrumbs -->
-				<ul class="breadcrumbs">
-					<li><a href="#">Главная</a></li>
-				</ul>
-				<!-- END breadcrumbs -->
-				<!-- BEGIN title -->
-				<div class="title">
-					<div class="title__text">Личный кабинет</div>
+		<!-- END title -->
+		<div class="to-center">
+			<div class="radio-group">
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1" checked>
+						<span>Жук Игорь Петрович</span>
+					</label>
 				</div>
-				<!-- END title -->
-				<!-- BEGIN record -->
-				<div class="record">
-					<div class="record__title">Мои записи к врачу</div>
-					<ul class="record__list">
-						<li class="record__item is-passed">
-							<div class="record__info">
-								<div class="record__date">
-									<p>1 апреля, четверг</p>
-									<div class="record__time">10:00</div>
-								</div>
-								<div class="record__topic">Консультация врача-терапевта</div>
-								<div class="record__doctor">
-									<p>Жук Игорь Николаевич</p>
-									<span>Терапевт </span>
-								</div>
-								<div class="record__clinic">
-									<p>Ветеринарная клиника SQ-lap</p>
-									<span>г. Минск, ул. Тимирязева, 46</span>
-								</div>
-							</div>
-							<div class="record__client">
-								<p><strong>Ваши данные: </strong> Иванов И. И.</p>
-								<p><strong>Питомец: </strong> Кот Пафнутий</p>
-							</div>
-							<div class="record__status">
-								<div class="record__progress">
-									<div class="record__progress-left">Статус записи:</div>
-									<div class="record__progress-right">Время записи прошло</div>
-								</div>
-							</div>
-						</li>
-						<li class="record__item is-missed">
-							<div class="record__info">
-								<div class="record__date">
-									<p>1 апреля, четверг</p>
-									<div class="record__time">10:00</div>
-								</div>
-								<div class="record__topic">Консультация врача-терапевта</div>
-								<div class="record__doctor">
-									<p>Жук Игорь Николаевич</p>
-									<span>Терапевт </span>
-								</div>
-								<div class="record__clinic">
-									<p>Ветеринарная клиника SQ-lap</p>
-									<span>г. Минск, ул. Тимирязева, 46</span>
-								</div>
-							</div>
-							<div class="record__client">
-								<p><strong>Ваши данные: </strong> Иванов И. И.</p>
-								<p><strong>Питомец: </strong> Кот Пафнутий</p>
-							</div>
-							<div class="record__status">
-								<div class="record__progress">
-									<div class="record__progress-left">Статус записи:</div>
-									<div class="record__progress-right">Вы были записаны, но не явились на приём</div>
-								</div>
-							</div>
-						</li>
-						<li class="record__item is-coming">
-							<div class="record__info">
-								<div class="record__date">
-									<p>1 апреля, четверг</p>
-									<div class="record__time">10:00</div>
-								</div>
-								<div class="record__topic">Консультация врача-терапевта</div>
-								<div class="record__doctor">
-									<p>Жук Игорь Николаевич</p>
-									<span>Терапевт </span>
-								</div>
-								<div class="record__clinic">
-									<p>Ветеринарная клиника SQ-lap</p>
-									<span>г. Минск, ул. Тимирязева, 46</span>
-								</div>
-							</div>
-							<div class="record__client">
-								<p><strong>Ваши данные: </strong> Иванов И. И.</p>
-								<p><strong>Питомец: </strong> Кот Пафнутий</p>
-							</div>
-							<div class="record__status">
-								<div class="record__progress">
-									<div class="record__progress-left">Статус записи:</div>
-									<div class="record__progress-right">Вы были записаны, но не явились на приём</div>
-									<div class="record__cancel">
-										<a href="js-popup-cancel" class="js-popup-link">Отменить запись</a>
-									</div>	
-								</div>
-							</div>
-						</li>
-						<li class="record__item is-coming">
-							<div class="record__info">
-								<div class="record__date">
-									<p>1 апреля, четверг</p>
-									<div class="record__time">10:00</div>
-								</div>
-								<div class="record__topic">Консультация врача-терапевта</div>
-								<div class="record__doctor">
-									<p>Жук Игорь Николаевич</p>
-									<span>Терапевт </span>
-								</div>
-								<div class="record__clinic">
-									<p>Ветеринарная клиника SQ-lap</p>
-									<span>г. Минск, ул. Тимирязева, 46</span>
-								</div>
-							</div>
-							<div class="record__client">
-								<p><strong>Ваши данные: </strong> Иванов И. И.</p>
-								<p><strong>Питомец: </strong> Кот Пафнутий</p>
-							</div>
-							<div class="record__status">
-								<div class="record__progress">
-									<div class="record__progress-left">Статус записи:</div>
-									<div class="record__progress-right">Вы были записаны, но не явились на приём</div>
-									<div class="record__cancel">
-										<a href="js-popup-cancel" class="js-popup-link">Отменить запись</a>
-									</div>	
-								</div>
-							</div>
-						</li>
-					</ul>
-					<div class="recording">
-						<div class="recording__left">
-							<div class="recording__title">Хотите записаться на приём к врачу?</div>
-							<p>Мы разработали удобную онлайн-запись ко всем врачам наших клиник. Теперь процесс записи стал ещё удобнее! Попробуйте!</p>
-						</div>
-						<div class="recording__right">
-							<button type="submit" class="submit submit_blue">Записаться на приём</button>
-						</div>
-					</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Климова Наталья Михайловна</span>
+					</label>
 				</div>
-				<!-- END record -->
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Иванов Иван Иванович</span>
+					</label>
+				</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Жук Игорь Петрович</span>
+					</label>
+				</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Жук Игорь Петрович</span>
+					</label>
+				</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Жук Игорь Петрович</span>
+					</label>
+				</div>
 			</div>
+			<div class="radio-group">
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Жук Игорь Петрович</span>
+					</label>
+				</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Климова Наталья Михайловна</span>
+					</label>
+				</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Иванов Иван Иванович</span>
+					</label>
+				</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Жук Игорь Петрович</span>
+					</label>
+				</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Жук Игорь Петрович</span>
+					</label>
+				</div>
+				<div class="radio-wrap">
+					<label class="radio">
+						<input type="radio" name="radio1">
+						<span>Жук Игорь Петрович</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="to-center">
+			<button type="submit" class="submit">Отправить</button>
 		</div>
 	</div>
 	<!-- END layout -->
 	<div class="push"></div>
 </div>
 <!-- END out-->
-<!-- BEGIN footer -->
+<!-- BEGIN footer -->  
 <footer class="footer">
 	<div class="footer__topper">
 		<div class="l-center">
@@ -516,31 +421,7 @@
 	</div>
 </footer>
 <!-- END footer -->
-<div class="overlay js-overlay">
-	<div class="popup js-popup js-popup-cancel">
-		<div class="popup__in">
-			<div class="popup__head">
-				<div class="popup__title">Хотите отменить запись?</div>
-				<div class="popup__"></div>
-			</div>
-			<form class="js-validate">
-				<div class="field field_cancel">
-					<div class="field__title">Причина отмены</div>
-					<div class="field__body">
-						<textarea class="input input_textarea" name=""></textarea>
-					</div>
-				</div>
-				<div class="field field_btn">
-					<div class="field__title"></div>
-					<div class="field__body">
-						<button type="submit" class="submit">Отменить запись</button>
-					</div>
-				</div>
-			</form>
-		</div>
-		<button class="popup__close js-popup-close"></button>
-	</div>
-</div>
+
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>

@@ -19,8 +19,10 @@
 					<div class="header__tools">или <a href="#" class="header__link">вызвать врача</a> на дом</div>
 				</div>
 				<div class="header__right">
-					<div class="to-profile"><a href="#">Личный кабинет</a></div>
-					<div class="header__tools"><a href="#" class="header__link">войти</a> / <a href="#" class="header__link">зарегистрироваться</a></div>
+					<div class="to-profile is-logged">
+						<a href="#">Владимир</a>
+						<a href="#" class="to-profile__logout"></a>
+					</div>
 				</div>
 				<div class="header__mid">
 					<div class="m-adress">
@@ -338,122 +340,7 @@
 				<!-- BEGIN record -->
 				<div class="record">
 					<div class="record__title">Мои записи к врачу</div>
-					<ul class="record__list">
-						<li class="record__item is-passed">
-							<div class="record__info">
-								<div class="record__date">
-									<p>1 апреля, четверг</p>
-									<div class="record__time">10:00</div>
-								</div>
-								<div class="record__topic">Консультация врача-терапевта</div>
-								<div class="record__doctor">
-									<p>Жук Игорь Николаевич</p>
-									<span>Терапевт </span>
-								</div>
-								<div class="record__clinic">
-									<p>Ветеринарная клиника SQ-lap</p>
-									<span>г. Минск, ул. Тимирязева, 46</span>
-								</div>
-							</div>
-							<div class="record__client">
-								<p><strong>Ваши данные: </strong> Иванов И. И.</p>
-								<p><strong>Питомец: </strong> Кот Пафнутий</p>
-							</div>
-							<div class="record__status">
-								<div class="record__progress">
-									<div class="record__progress-left">Статус записи:</div>
-									<div class="record__progress-right">Время записи прошло</div>
-								</div>
-							</div>
-						</li>
-						<li class="record__item is-missed">
-							<div class="record__info">
-								<div class="record__date">
-									<p>1 апреля, четверг</p>
-									<div class="record__time">10:00</div>
-								</div>
-								<div class="record__topic">Консультация врача-терапевта</div>
-								<div class="record__doctor">
-									<p>Жук Игорь Николаевич</p>
-									<span>Терапевт </span>
-								</div>
-								<div class="record__clinic">
-									<p>Ветеринарная клиника SQ-lap</p>
-									<span>г. Минск, ул. Тимирязева, 46</span>
-								</div>
-							</div>
-							<div class="record__client">
-								<p><strong>Ваши данные: </strong> Иванов И. И.</p>
-								<p><strong>Питомец: </strong> Кот Пафнутий</p>
-							</div>
-							<div class="record__status">
-								<div class="record__progress">
-									<div class="record__progress-left">Статус записи:</div>
-									<div class="record__progress-right">Вы были записаны, но не явились на приём</div>
-								</div>
-							</div>
-						</li>
-						<li class="record__item is-coming">
-							<div class="record__info">
-								<div class="record__date">
-									<p>1 апреля, четверг</p>
-									<div class="record__time">10:00</div>
-								</div>
-								<div class="record__topic">Консультация врача-терапевта</div>
-								<div class="record__doctor">
-									<p>Жук Игорь Николаевич</p>
-									<span>Терапевт </span>
-								</div>
-								<div class="record__clinic">
-									<p>Ветеринарная клиника SQ-lap</p>
-									<span>г. Минск, ул. Тимирязева, 46</span>
-								</div>
-							</div>
-							<div class="record__client">
-								<p><strong>Ваши данные: </strong> Иванов И. И.</p>
-								<p><strong>Питомец: </strong> Кот Пафнутий</p>
-							</div>
-							<div class="record__status">
-								<div class="record__progress">
-									<div class="record__progress-left">Статус записи:</div>
-									<div class="record__progress-right">Вы были записаны, но не явились на приём</div>
-									<div class="record__cancel">
-										<a href="js-popup-cancel" class="js-popup-link">Отменить запись</a>
-									</div>	
-								</div>
-							</div>
-						</li>
-						<li class="record__item is-coming">
-							<div class="record__info">
-								<div class="record__date">
-									<p>1 апреля, четверг</p>
-									<div class="record__time">10:00</div>
-								</div>
-								<div class="record__topic">Консультация врача-терапевта</div>
-								<div class="record__doctor">
-									<p>Жук Игорь Николаевич</p>
-									<span>Терапевт </span>
-								</div>
-								<div class="record__clinic">
-									<p>Ветеринарная клиника SQ-lap</p>
-									<span>г. Минск, ул. Тимирязева, 46</span>
-								</div>
-							</div>
-							<div class="record__client">
-								<p><strong>Ваши данные: </strong> Иванов И. И.</p>
-								<p><strong>Питомец: </strong> Кот Пафнутий</p>
-							</div>
-							<div class="record__status">
-								<div class="record__progress">
-									<div class="record__progress-left">Статус записи:</div>
-									<div class="record__progress-right">Вы были записаны, но не явились на приём</div>
-									<div class="record__cancel">
-										<a href="js-popup-cancel" class="js-popup-link">Отменить запись</a>
-									</div>	
-								</div>
-							</div>
-						</li>
-					</ul>
+					<div class="record__none">Вы ещё ни разу не записывались к врачу.</div>
 					<div class="recording">
 						<div class="recording__left">
 							<div class="recording__title">Хотите записаться на приём к врачу?</div>
@@ -516,31 +403,7 @@
 	</div>
 </footer>
 <!-- END footer -->
-<div class="overlay js-overlay">
-	<div class="popup js-popup js-popup-cancel">
-		<div class="popup__in">
-			<div class="popup__head">
-				<div class="popup__title">Хотите отменить запись?</div>
-				<div class="popup__"></div>
-			</div>
-			<form class="js-validate">
-				<div class="field field_cancel">
-					<div class="field__title">Причина отмены</div>
-					<div class="field__body">
-						<textarea class="input input_textarea" name=""></textarea>
-					</div>
-				</div>
-				<div class="field field_btn">
-					<div class="field__title"></div>
-					<div class="field__body">
-						<button type="submit" class="submit">Отменить запись</button>
-					</div>
-				</div>
-			</form>
-		</div>
-		<button class="popup__close js-popup-close"></button>
-	</div>
-</div>
+
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>
