@@ -69,27 +69,27 @@ head.ready(function() {
 		});
 	};
 
-	$(document).on("click",function(){
-		$(".js-overlay").hide();
-		$("html").removeClass("has-open-popup");
+	$(document).on('click',function(){
+		$('.js-overlay').hide();
+		$('html').removeClass('has-open-popup');
 	});
 
 // popups
-	$(".js-popup-link").on("click", function(event){
-		$(".js-overlay").fadeOut(200);
-		var popup = $(this).attr("href");
-		$("html").addClass("has-open-popup");
-		$("."+popup).parent().fadeIn(200);
+	$('.js-popup-link').on('click', function(event){
+		$('.js-overlay').fadeOut(200);
+		var popup = $(this).attr('href');
+		$('html').addClass('has-open-popup');
+		$('.'+popup).parent().fadeIn(200);
 		event.stopPropagation();
 		return false; 
 	});
 
-	$(".js-popup-close").on("click", function(){
-		$(".js-overlay").fadeOut(200); 
-		$("html").removeClass("has-open-popup")
+	$('.js-popup-close').on('click', function(){
+		$('.js-overlay').fadeOut(200); 
+		$('html').removeClass('has-open-popup')
 		return false;
 	});
-	$(".js-popup").on("click", function(event){
+	$('.js-popup').on('click', function(event){
 		event.stopPropagation();
 	});
 
@@ -189,15 +189,15 @@ head.ready(function() {
 
 	// validation form
 	function validate() {
-		$(".js-validate").each(function(){
+		$('.js-validate').each(function(){
 			if ($(this).length > 0) {
 				$(this).validate({
-					errorClass: "is-error",
+					errorClass: 'is-error',
 					rules: {
-						//firstname: "required",
-						//lastname: "required",
-						//fathername: "required",
-						//alias: "required",
+						//firstname: 'required',
+						//lastname: 'required',
+						//fathername: 'required',
+						//alias: 'required',
 						username: {
 							//required: true,
 							minlength: 2
@@ -209,7 +209,7 @@ head.ready(function() {
 						confirm_password: {
 							//required: true,
 							minlength: 5,
-							equalTo: "#password"
+							equalTo: '#password'
 						},
 						email: {
 							//required: true,
@@ -227,56 +227,56 @@ head.ready(function() {
 						}
 					},
 					// messages: {
-					// 	firstname: "Вас так зовут?",
-					// 	lastname: "У вас такая фамилия?",
-					// 	fathername: "У вас такое отчество?",
+					// 	firstname: 'Вас так зовут?',
+					// 	lastname: 'У вас такая фамилия?',
+					// 	fathername: 'У вас такое отчество?',
 					// 	password: {
-					// 		required: "Пароли не совпадают",
-					// 		minlength: "Минимум 5 символов"
+					// 		required: 'Пароли не совпадают',
+					// 		minlength: 'Минимум 5 символов'
 					// 	},
 					// 	confirm_password: {
-					// 		required: "Пароли не совпадают",
-					// 		minlength: "Минимум 5 символов",
-					// 		equalTo: "Пароли не совпадают"
+					// 		required: 'Пароли не совпадают',
+					// 		minlength: 'Минимум 5 символов',
+					// 		equalTo: 'Пароли не совпадают'
 					// 	},
-					// 	email: "Неверный формат",
-					// 	address: "Это Ваш адрес?",
+					// 	email: 'Неверный формат',
+					// 	address: 'Это Ваш адрес?',
 					// 	tel: {
-					// 		required: "Телефон с ошибкой",
-					// 		phoneUS: "Please enter a valid phone number: (e.g. 19999999999 or 9999999999)"
+					// 		required: 'Телефон с ошибкой',
+					// 		phoneUS: 'Please enter a valid phone number: (e.g. 19999999999 or 9999999999)'
 					// 	},
 					// 	message: {
-					// 		required: "Это Ваш вопрос?",
-					// 		minlength: "Это Ваш вопрос?"
+					// 		required: 'Это Ваш вопрос?',
+					// 		minlength: 'Это Ваш вопрос?'
 					// 	}
 					// }
 					messages: {
-						firstname: "",
-						lastname: "",
-						fathername: "",
-						alias: "",
+						firstname: '',
+						lastname: '',
+						fathername: '',
+						alias: '',
 						password: {
-							required: "",
-							minlength: ""
+							required: '',
+							minlength: ''
 						},
 						confirm_password: {
-							required: "",
-							minlength: "",
-							equalTo: ""
+							required: '',
+							minlength: '',
+							equalTo: ''
 						},
-						email: "",
-						address: "",
-						workplace: "",
-						edu: "",
-						status: "",
-						exp: "",
+						email: '',
+						address: '',
+						workplace: '',
+						edu: '',
+						status: '',
+						exp: '',
 						tel: {
-							required: "",
-							phoneUS: ""
+							required: '',
+							phoneUS: ''
 						},
 						message: {
-							required: "",
-							minlength: ""
+							required: '',
+							minlength: ''
 						}
 					}
 				});
@@ -287,10 +287,10 @@ head.ready(function() {
 	validate();
 
 	function validateEnter() {
-		$(".js-validate-enter").each(function(){
+		$('.js-validate-enter').each(function(){
 			if ($(this).length > 0) {
 				$(this).validate({
-					errorClass: "is-error",
+					errorClass: 'is-error',
 					rules: {
 						password: {
 							//required: true,
@@ -303,10 +303,10 @@ head.ready(function() {
 					},
 					messages: {
 						password: {
-							required: "",
-							minlength: ""
+							required: '',
+							minlength: ''
 						},
-						email: ""
+						email: ''
 					}
 				});
 			}
@@ -316,20 +316,20 @@ head.ready(function() {
 
 // tabs
 	function tab() {
-       $(".js-tab").each(function(){
-            var tab_link = $(this).find("a");
-            var tab_item = $(this).find("li");
-            var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
+       $('.js-tab').each(function(){
+            var tab_link = $(this).find('a');
+            var tab_item = $(this).find('li');
+            var tab_cont = $(this).parents('.js-tab-group').find('.js-tab-cont');
            // tab_cont.hide();
-            tab_item.first().addClass("is-active");
-            //$(this).parents(".js-tab-group").find(".js-tab1").show();
+            tab_item.first().addClass('is-active');
+            //$(this).parents('.js-tab-group').find('.js-tab1').show();
        });
-       $(".js-tab a").on("click", function() {
-            var index = $(this).attr("href");  
-            $(this).parents(".js-tab").find("li").removeClass("is-active");
-            $(this).parent().addClass("is-active");
-            $(this).parents(".js-tab-group").find(".js-tab-cont").hide();
-            $(this).parents(".js-tab-group").find("."+index).show();
+       $('.js-tab a').on('click', function() {
+            var index = $(this).attr('href');  
+            $(this).parents('.js-tab').find('li').removeClass('is-active');
+            $(this).parent().addClass('is-active');
+            $(this).parents('.js-tab-group').find('.js-tab-cont').hide();
+            $(this).parents('.js-tab-group').find('.'+index).show();
             return false;
       });
   	}
@@ -337,24 +337,24 @@ head.ready(function() {
 
 // sitemap popup
 
-	$(".js-sitemap").hide();
+	$('.js-sitemap').hide();
 
-	$(".js-sitemap-btn").on('click', function(){
-		$(".js-sitemap").show();
+	$('.js-sitemap-btn').on('click', function(){
+		$('.js-sitemap').show();
 		return false;
 	});
 
-	$(".js-sitemap-close").on('click', function(){
-		$(this).parents(".js-sitemap").hide();
+	$('.js-sitemap-close').on('click', function(){
+		$(this).parents('.js-sitemap').hide();
 		return false;
 	});
 
 // catalog tabs
 
-	if ($(".catalog__tabs").length) {
+	if ($('.catalog__tabs').length) {
 		function CatalogTabs(){
 			
-			$(".catalog__tabs").each(function(){
+			$('.catalog__tabs').each(function(){
 				var tabs_btn = $(this).find('> .catalog__tabs-nav a'),
 					tabs_container = $(this).find('> .catalog__tabs-wrap'),
 					tabs_item = tabs_container.find('> .catalog__tabs-content'),
@@ -384,23 +384,23 @@ head.ready(function() {
 // scroll-pane
 
 	function scrollPane(){
-    if ($(".js-scroll-pane").length){
+    if ($('.js-scroll-pane').length){
       $('.js-scroll-pane').jScrollPane({
         reinitialise: true
       }); 
     }
   }
 	
-    scrollPane();
+  scrollPane();
 
 // catalog popup
 	
-	$(".js-catalog").hide();
+	$('.js-catalog').hide();
 
 	function catalogPopup(){
-		if ($(".js-catalog")) {
+		if ($('.js-catalog')) {
 
-			var link = $(".js-catalog-link"),
+			var link = $('.js-catalog-link'),
 			close = $('.js-catalog-close');
 
 			link.each(function(){
@@ -416,5 +416,26 @@ head.ready(function() {
 		}
 	} 	
 	catalogPopup();   	
+
+	// jquery ui slider
+	var range_slider = $('.js-range-slider'),
+			range_slider_el = range_slider.find('.range__el'),
+			range_slider_from = range_slider.find('.range__from'),
+			range_slider_to = range_slider.find('.range__to'),
+			range_slider_currency = range_slider.data('currency');
+	if (range_slider.length) {
+		range_slider_el.slider({
+			range: true,
+			min: 0,
+			max: 500,
+			values: [ 75, 300 ],
+			slide: function( event, ui ) {
+			  range_slider_from.html(ui.values[0] + ' ' + range_slider_currency);
+			  range_slider_to.html(ui.values[1] + ' ' + range_slider_currency);
+			}
+		});
+		range_slider_from.html(range_slider_el.slider('values', 0) + ' ' + range_slider_currency);
+		range_slider_to.html(range_slider_el.slider('values', 1) + ' ' + range_slider_currency);
+	};
 
 });
