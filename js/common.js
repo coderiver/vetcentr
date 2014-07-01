@@ -60,8 +60,7 @@ head.ready(function() {
 		minScale: 0.7,
 		autoplay: true,
     	autoplayDuration: 3000,
-    	autoplayPauseOnHover: true,
-    	responsive: true
+    	autoplayPauseOnHover: true
 	});
 
 // fancy box

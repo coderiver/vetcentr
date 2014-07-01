@@ -454,7 +454,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .benefits__title { margin-bottom: 35px; font-family: "DirectSemiCondencedBold", Arial, sans-serif; font-size: 20px; color: #182e41; text-align: center; }
 
-.benefits__list { text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; padding-bottom: 30px; -moz-box-shadow: 0 22px 37px -29px #87a5c3; -webkit-box-shadow: 0 22px 37px -29px #87a5c3; box-shadow: 0 22px 37px -29px #87a5c3; }
+.benefits__list { text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; padding-bottom: 30px; -moz-box-shadow: 0 22px 37px -34px #87a5c3; -webkit-box-shadow: 0 22px 37px -34px #87a5c3; box-shadow: 0 22px 37px -34px #87a5c3; }
 .benefits__list:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
 
 .benefits__item { position: relative; display: inline-block; line-height: normal; vertical-align: top; font-size: 14px; width: 27%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 89px; }
@@ -510,7 +510,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 .m-clinics__img { margin-bottom: 35px; font-size: 0; }
 .m-clinics__img p { font-size: 12px; color: #939eac; font-style: italic; }
 
-.roundabout { width: 210px; height: 137px; margin: 0 auto 35px; }
+.roundabout { width: 190px; height: 137px; margin: 0 auto 35px; }
 .roundabout li img { width: 100%; height: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 3px solid white; border-radius: 8px; box-shadow: 0 2px 9px rgba(49, 86, 122, 0.67); }
 
 .m-clinics__btn .subscribe { margin-bottom: 5px; }
