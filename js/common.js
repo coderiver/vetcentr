@@ -54,7 +54,17 @@ head.ready(function() {
 		});
 	};
 
-	// fancy box
+// roundabout slider
+	
+	$(".js-roundabout").roundabout({
+		minScale: 0.7,
+		autoplay: true,
+    	autoplayDuration: 3000,
+    	autoplayPauseOnHover: true,
+    	responsive: true
+	});
+
+// fancy box
 	var fancy_el = $('.js-fancybox'),	
 			fancy_popup = $('.js-fancybox-popup');
 	if (fancy_el.length) {
