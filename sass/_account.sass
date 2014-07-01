@@ -157,10 +157,81 @@
         
 .ads__topper
     +clr
+    margin-bottom: 28px
     .submit
         float: right
 .ads__title
     font-size: 20px
     float: left
-    +direct-scb                             
-              
+    +direct-scb
+
+// record                                 
+.record__title
+    font-size: 20px
+    +direct-scb
+.record__list
+    padding-top: 20px
+    +clr
+.record__item
+    position: relative
+    width: 297px
+    margin-right: 72px
+    background: #fffac6
+    +g(#fff7a6, #fffef3)
+    &:after
+        content: ""
+        position: absolute
+        right: 10px
+        left: 10px
+        bottom: 10px
+        height: 10px
+        +box-shadow(0 8px 20px 9px #d9d5cf)
+        +transform(rotate(3deg))
+        z-index: -1
+.record__info
+    padding: 38px 29px 15px
+    border-bottom: 1px solid #ede8b0
+    font-size: 14px
+    text-align: center
+.record__client
+    padding: 0 29px
+    border-top: 1px solid #fff
+    border-bottom: 1px solid #ede8b0
+.record__status
+    padding: 0 29px
+    border-top: 1px solid #fff
+.record__date
+    +direct-scb
+    margin-bottom: 20px
+.record__time
+    font-size: 28px
+    color: #da8412
+.record__topic
+    margin-bottom: 20px
+.record__doctor
+    margin-bottom: 20px
+    p
+        font-weight: bold
+    span
+        font-style: italic
+        color: #959daa
+        font-size: 12px
+.record__clinic
+    span
+        font-style: italic
+        color: #959daa
+        font-size: 12px
+.record__client
+    padding: 12px 29px
+    font-size: 14px
+.record__status
+    padding: 15px 29px
+.record__progress
+    +clr
+    font-size: 12px                                                             
+.record__progress-left
+    float: left
+    margin-right: 15px
+.record__progress-right
+    float: left
+    font-style: italic    

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>account</title>
+	<title>11-0 Anketa</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -280,104 +280,429 @@
 	</header>
 	<!-- END header -->
 	<!-- BEGIN layout -->
-	<div class="l-layout">
-		<div class="l-aside">
-			<!-- BEGIN aside-pets -->
-			<div class="aside-pets">
-				<ul>
-					<li>
-						<a href="#" class="pet is-active">
-							<div class="pet__img">
-								<img src="img/positive-cat.png" alt="">
-							</div>
-							<div class="pet__content">
-								<p>Аркадий Иммануилович</p>
-								<span>Кот</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="pet">
-							<div class="pet__img">
-								<img src="img/positive-cat.png" alt="">
-							</div>
-							<div class="pet__content">
-								<p>Джекки</p>
-								<span>Собака</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="link-add"><span>+ Добавить анкету питомца</span></a>
-					</li>
-				</ul>
-			</div>
-			<!-- END aside-pets -->
-			<!-- BEGIN aside-nav -->
-			<nav class="aside-nav">
-				<ul>
-					<li class="is-active"><a href="#">Редактировать данные<i></i></a></li>
-					<li><a href="#">Мои объявления<i></i></a></li>
-					<li><a href="#">Мои записи к врачу<i></i></a></li>
-				</ul>
-			</nav>
-			<!-- END aside-nav -->
+	<div class="l-layout l-layout_medium">
+		<!-- BEGIN breadcrumbs -->
+		<ul class="breadcrumbs">
+			<li><a href="#">Главная</a></li>
+		</ul>
+		<!-- END breadcrumbs -->
+		<!-- BEGIN title -->
+		<div class="title">
+			<div class="title__text">Анкета качества оказываемых услуг</div>
 		</div>
-		<div class="l-section">
-			<div class="l-section__in">
-				<!-- BEGIN breadcrumbs -->
-				<ul class="breadcrumbs">
-					<li><a href="#">Главная</a></li>
-				</ul>
-				<!-- END breadcrumbs -->
-				<!-- BEGIN title -->
-				<div class="title">
-					<div class="title__text">Личный кабинет</div>
+		<!-- END title -->
+		<div class="field-group-wrap">
+			<div class="field-group">	
+				<div class="field-group__title">
+					1. Возможность дозвониться
 				</div>
-				<!-- END title -->
-				<!-- BEGIN ads -->
-				<div class="ads">
-					<div class="ads__topper">
-						<div class="ads__title">Мои объявления</div>
-						<button type="button" class="submit">Новое объявление</button>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1" checked>
+							<span>Отлично</span>
+						</label>
 					</div>
-					<!-- BEGIN types -->
-				<div class="types">
-					<div class="types__in">
-						<a class="types__link is-active" href="#">Все</a>
-						<a class="types__link" href="#">Потерянные</a>
-						<a class="types__link" href="#">Найденные</a>
-						<a class="types__link" href="#">Приму в дар</a>
-						<a class="types__link" href="#">Отдам в дар</a>
-						<a class="types__link" href="#">Куплю</a>
-						<a class="types__link" href="#">Продам</a>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name1">
+							<span>Плохо</span>
+						</label>
 					</div>
 				</div>
-				<!-- END types -->
-				<!-- BEGIN sort -->
-				<div class="sort">
-					<div class="sort__title">Сортировать:</div>
-					<div class="sort__list">
-						<a class="is-active" href="#">цена</a>
-						<a href="#">дата</a>
-					</div>
-				</div>
-				<!-- END sort -->
-				<!-- BEGIN ad -->
-				<div class="ad">
-					На данный момент у вас нет объявлений
-				</div>
-				<!-- END ad -->
-				</div>
-				<!-- END ads -->
 			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					2. Разговор с администратором по телефону
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2" checked>
+							<span>Отлично</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name2">
+							<span>Плохо</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					3. Получили ли Вы понятную информацию по интересующим Вас вопросам?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name3" checked>
+							<span>Да</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name3">
+							<span>Нет</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					4. Получили ли Вы внятную информацию, после прихода в клинику о том, в каком кабинете, какой врач и когда Вашего питомца будет осматривать?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name4" checked>
+							<span>Да</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name4">
+							<span>Нет</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					5. Как Вы оцениваете работу врачей?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name5" checked>
+							<span>Отлично</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name5">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name5">
+							<span>Плохо</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					6. Как Вы оцениваете работу диагностов?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name6" checked>
+							<span>Отлично</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name6">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name6">
+							<span>Плохо</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					7. Как Вы оцениваете работу фельдшеров?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name7" checked>
+							<span>Отлично</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name7">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name7">
+							<span>Плохо</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					8. Как Вы оцениваете работу санитаров?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name8" checked>
+							<span>Отлично</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name8">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name8">
+							<span>Плохо</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					9. Как Вы оцениваете работу администраторов при расчёте?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name9" checked>
+							<span>Отлично</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name9">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name9">
+							<span>Плохо</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					10. Как Вы оцениваете общую слаженность работы всего коллектива?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name10" checked>
+							<span>Отлично</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name10">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name10">
+							<span>Плохо</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					11. Как Вы оцениваете уровень дезинфекции в клинике?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name11" checked>
+							<span>Отлично</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name11">
+							<span>Нормально</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name11">
+							<span>Плохо</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					12. Какое сложилось у Вас мнение, насчёт компетентности сотрудников по ветеринарным вопросам?
+				</div>
+				<div class="field-group__body">
+					<div class="input-wrap">
+						<textarea class="input input_textarea"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					13. Получили ли Вы весь комплекс необходимых услуг:?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name13" checked>
+							<span>Да</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name13">
+							<span>Нет</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					14. Какие виды услуг надо добавить?
+				</div>
+				<div class="field-group__body">
+					<div class="input-wrap">
+						<textarea class="input input_textarea"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					15. Что необходимо изменить в клинике для более комфортного пребывания                                                          
+				</div>
+				<div class="field-group__body">
+					<div class="input-wrap">
+						<textarea class="input input_textarea"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					16. Соответствует ли уровень цен нашим услугам?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name16" checked>
+							<span>Да</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name16">
+							<span>Нет</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					17. Назовите какими акциями, скидками, подарками, предосталяемыми администрацией клиники, Вы пользовались?
+				</div>
+				<div class="field-group__body">
+					<div class="input-wrap">
+						<textarea class="input input_textarea"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					18. Откуда Вы узнали о нашей клинике?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name18" checked>
+							<span>Интернет</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name18">
+							<span>Реклама в транспорте</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name18">
+							<span>Рекомендации друзей, знакомых</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name18">
+							<span>Другие источники</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					19. Обратитесь ли Вы в нашу клинику, если у Вас возникнет  необходимость в получении ветеринарной помощи?
+				</div>
+				<div class="field-group__body">
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name19" checked>
+							<span>Да</span>
+						</label>
+					</div>
+					<div class="radio-wrap">
+						<label class="radio">
+							<input type="radio" name="name19">
+							<span>Нет</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="field-group">	
+				<div class="field-group__title">
+					20. Заполните по желанию свои данные (ФИО) и телефон.   
+				</div>
+				<div class="field-group__body">
+					<div class="input-wrap">
+						<textarea class="input input_textarea"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="field-group-submit">
+				<button type="submit" class="submit">Отправить</button>
+			</div>	
 		</div>
 	</div>
 	<!-- END layout -->
 	<div class="push"></div>
 </div>
 <!-- END out-->
-<!-- BEGIN footer -->
+<!-- BEGIN footer -->  
 <footer class="footer">
 	<div class="footer__topper">
 		<div class="l-center">
