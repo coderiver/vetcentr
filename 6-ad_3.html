@@ -299,12 +299,12 @@
 					<div class="form__title">Новое объявление</div>
 					<div class="form__inner">
 						<div class="form__row">
-							<div class="form__left">Заголовок<span>*</span></div>
+							<div class="form__left">Категория<span>*</span></div>
 							<div class="form__right">
 								<ul class="form__categories">
 									<li><a href="#">Все</a></li>
 									<li><a href="#">Потерянные</a></li>
-									<li><a href="#">Найденные</a></li>
+									<li class="is-active"><a href="#">Найденные</a></li>
 									<li><a href="#">Приму в дар</a></li>
 									<li><a href="#">Отдам в дар</a></li>
 									<li><a href="#">Куплю</a></li>
@@ -387,6 +387,20 @@
 								</label>
 							</span>
 						</label>
+						<div class="form__row">
+							<div class="form__left">Изображения<span>*</span></div>
+							<div class="form__right">
+								<div class="form__files">
+									<ul class="form__files-list">
+										<li><i class="form__files-ico"></i><span class="form__files-from">...\foto20.jpeg</span><button class="form__files-delete"></button></li>
+										<li><i class="form__files-ico"></i><span class="form__files-from">...\foto21.jpeg</span><button class="form__files-delete"></button></li>
+										<li><i class="form__files-ico"></i><span class="form__files-from">...\foto22.jpeg</span><button class="form__files-delete"></button></li>
+										<li><i class="form__files-ico"></i><a class="form__files-from" href="#">Прикрепить изображение</a></li>
+									</ul>
+									<a class="link-add" href="#"><span>+ Ещё...</span></a>
+								</div>
+							</div>
+						</div>
 						<div class="form__submit">
 							<button type="submit" class="submit">Отправить</button>
 						</div>

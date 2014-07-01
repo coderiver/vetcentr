@@ -272,6 +272,43 @@ a
 	padding-top: 29px
 	border-top: 1px solid #d7dee5
 .form__categories
+	font-size: 0
+	li
+		display: inline-block
+		margin-right: 5px
+		padding: 3px 5px
+		&.is-active
+			border-radius: 5px
+			background: #246db4
+			a
+				
+				border: none  
+				color: #fff
+	a
+		border-bottom: 1px dotted 
+		font-size: 12px
+		text-decoration: none
+.form__files
+	.link-add
+		margin: 0 0 0 21px 
+.form__files-list
+	font-size: 0
+	li
+		margin-bottom: 10px
+.form__files-ico, .form__files-from, .form__files-delete
+	display: inline-block
+	vertical-align: middle
+.form__files-ico
+	margin-right: 5px
+	+s(form-files-ico)
+.form__files-delete
+	+s(form-files-del)
+.form__files-from
+	margin-right: 15px
+	font-size: 12px
+	color: #959DAA
+	border-bottom: 1px dotted  
+	text-decoration: none
 	
 .link-add
 	display: inline-block
