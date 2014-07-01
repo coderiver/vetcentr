@@ -452,35 +452,39 @@ a
 .header__mid
 	overflow: hidden
 	text-align: center
+	padding-bottom: 20px
 .logo
-	display: inline-block
-	vertical-align: top
-	margin: 0 20px
-	+r(w1280)
-		margin: 0 10px  
-	a
-		display: block
-		position: relative
-		width: 166px
-		height: 110px
-		&:before
-			content: ""
-			position: absolute
-			top: 0px
-			left: -10px
-			+s(logo1)
-			z-index: 1
-		&:after
-			content: ""
-			position: absolute
-			top: 0px
-			right: -10px
-			+s(logo2)
-			+tr(all 300ms)
-			z-index: 2	
+	position: relative
+	float: left
+	width: 50%
+	+box
+	text-align: right
+	padding-right: 110px
+	z-index: 1
+	&:hover
+		color: #246db4
+		.logo__sqlap
+			+transform(scale(1.07))
+	&.logo_right
+		text-align: left
+		padding-right: 0
+		padding-left: 110px
+		z-index: 2
 		&:hover
-			&:after
-				+transform(scale(1.07))			
+			.logo__antistress
+				+transform(scale(1.07)) 
+.logo__sqlap
+	position: absolute
+	top: 0
+	right: -20px
+	+s(logo1)
+	+tr(all 300ms)
+.logo__antistress
+	position: absolute
+	top: 0
+	left: -20px
+	+s(logo2)	 	
+	+tr(all 300ms)		
 .m-adress
 	display: inline-block
 	vertical-align: top
@@ -640,7 +644,7 @@ a
 	.sitemap__btn
 		float: left
 		margin-top: 1px 
-		margin-left: 1px
+		margin-left: 2px
 .sitemap__close
 	position: relative
 	float: right
@@ -699,7 +703,7 @@ a
 	+clr
 	padding: 0 100px 45px
 	margin: 0 25px 55px 
-	+box-shadow(0 22px 37px -19px #87a5c3) 
+	+box-shadow(0 22px 37px -27px #87a5c3) 
 .sitemap__col
 	float: left
 	width: 25%	
@@ -908,8 +912,21 @@ a
 	position: relative
 	height: 122px			
 .footer__logo
+	position: relative
 	float: left
+	width: 160px
+	height: 114px
 	margin-right: 135px
+	.logo__sqlap
+		right: auto
+		left: -20px
+		&:hover
+			+transform(scale(1.07))
+	.logo__antistress
+		left: auto
+		right: -7px
+		&:hover
+			+transform(scale(1.07))	
 .footer__adress
 	float: left
 	.m-adress
