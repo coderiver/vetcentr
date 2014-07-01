@@ -172,17 +172,24 @@
 .record__list
     padding-top: 20px
     +clr
+    border-bottom: 1px dashed #dadada
+    margin-bottom: 40px 
 .record__item
     position: relative
     width: 297px
+    float: left
     margin-right: 72px
+    margin-bottom: 88px
     background: #fffac6
     +g(#fff7a6, #fffef3)
+    &.is-missed
+        background: #e5f3fe
+        +g(#d6ecfe, #fafcff) 
     &:after
         content: ""
         position: absolute
-        right: 10px
-        left: 10px
+        right: 17px
+        left: 17px
         bottom: 10px
         height: 10px
         +box-shadow(0 8px 20px 9px #d9d5cf)
@@ -228,10 +235,74 @@
     padding: 15px 29px
 .record__progress
     +clr
+    min-height: 36px 
     font-size: 12px                                                             
 .record__progress-left
     float: left
-    margin-right: 15px
+    width: 35%
+    margin-right: 5%
 .record__progress-right
     float: left
-    font-style: italic    
+    width: 60%
+    font-style: italic
+    .is-passed &
+        color: #959daa
+    .is-missed &
+        color: #fc5656        
+    .is-coming &
+        color: #3e8a2b
+.record__cancel
+    clear: both
+    padding: 15px 0
+    text-align: center
+    a
+        position: relative
+        display: inline-block
+        padding-left: 21px
+        font-size: 12px
+        color: #959daa
+        font-style: italic 
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            +s(cancel)
+
+.recording
+    +clr
+    width: 663px
+    padding: 20px 0 
+    border-radius: 7px
+    border: 2px solid #e98500
+.recording__left
+    float: left
+    width: 390px
+    padding-left: 30px 
+    font-size: 12px
+    line-height: 1.6
+    font-style: italic
+    color: #919ba6
+.recording__title
+    margin-bottom: 10px
+    +direct-c
+    font-style: normal    
+    font-size: 18px
+    color: #253242
+    padding-left: 15px
+.recording__right
+    float: right
+    width: 243px
+    height: 76px
+    text-align: center
+    &:before
+        content: ""
+        display: inline-block
+        width: 0
+        height: 100%
+        vertical-align: middle
+    .submit
+        vertical-align: middle
+        
+.record__none
+    margin: 20px 0 80px                   

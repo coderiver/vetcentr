@@ -398,6 +398,7 @@ a
 .header__right
 	float: right
 	width: 187px
+	text-align: right
 	padding-top: 20px
 	.header__tools
 		color: #d96d0b
@@ -476,24 +477,34 @@ a
 	position: relative
 	display: block
 	height: 42px
+	text-align: left
 	padding: 10px 23px 10px 43px
 	margin-bottom: 6px
 	+box
 	border-radius: 5px
 	background: #fcf4c9
-	color: #db751a
-	text-decoration: none
-	font-weight: bold
-	font-size: 14px 
-	span
+	a
+		position: relative
 		display: inline-block
-		border-bottom: 1px dotted 
+		color: #db751a
+		text-decoration: none
+		font-weight: bold
+		font-size: 14px
+		border-bottom: 1px dotted
 	&:before
 		content: ""
 		position: absolute
 		top: 10px
 		left: 15px
 		+s(profile)
+	&.is-logged
+		display: inline-block
+		a
+			margin-right: 5px
+		.to-profile__logout
+			display: inline-block
+			border-bottom: none
+			+s(reset)  	
 	+r(w1280)
 		font-size: 13px	
 .nav
@@ -583,7 +594,8 @@ a
 	margin: 0 25px 30px 75px 
 	.sitemap__btn
 		float: left
-		margin-left: 30px
+		margin-top: 1px 
+		margin-left: 1px
 .sitemap__close
 	position: relative
 	float: right
