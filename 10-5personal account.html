@@ -418,7 +418,7 @@
 									<div class="record__progress-left">Статус записи:</div>
 									<div class="record__progress-right">Вы были записаны, но не явились на приём</div>
 									<div class="record__cancel">
-										<a href="#">Отменить запись</a>
+										<a href="js-popup-cancel" class="js-popup-link">Отменить запись</a>
 									</div>	
 								</div>
 							</div>
@@ -448,7 +448,7 @@
 									<div class="record__progress-left">Статус записи:</div>
 									<div class="record__progress-right">Вы были записаны, но не явились на приём</div>
 									<div class="record__cancel">
-										<a href="#">Отменить запись</a>
+										<a href="js-popup-cancel" class="js-popup-link">Отменить запись</a>
 									</div>	
 								</div>
 							</div>
@@ -516,7 +516,31 @@
 	</div>
 </footer>
 <!-- END footer -->
-
+<div class="overlay js-overlay">
+	<div class="popup js-popup js-popup-cancel">
+		<div class="popup__in">
+			<div class="popup__head">
+				<div class="popup__title">Хотите отменить запись?</div>
+				<div class="popup__"></div>
+			</div>
+			<form class="js-validate">
+				<div class="field field_cancel">
+					<div class="field__title">Причина отмены</div>
+					<div class="field__body">
+						<textarea class="input input_textarea" name=""></textarea>
+					</div>
+				</div>
+				<div class="field field_btn">
+					<div class="field__title"></div>
+					<div class="field__body">
+						<button type="submit" class="submit">Отменить запись</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<button class="popup__close js-popup-close"></button>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>

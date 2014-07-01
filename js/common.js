@@ -415,6 +415,14 @@ head.ready(function() {
 
 		}
 	} 	
-	catalogPopup();   	
+	catalogPopup();
+
+// cancel popup
+	
+	$(".js-popup-cancel-btn").on('click', function(){
+		$(".js-popup-cancel").show();
+		return false;
+	});
+
 
 });
