@@ -54,6 +54,7 @@ body
 	font-size: 12px
 	color: #253242 
 	line-height: 1.3
+	background: #0a589b 
 
 a
 	color: $blue
@@ -63,12 +64,15 @@ a
 		color: $orange
 
 .out
+	max-width: 1280px
 	min-height: 100%
 	height: auto !important
 	height: 100%
 	margin: 0 auto -243px
 	background: #f2f6fa
 	+background-image(linear-gradient(bottom, #fff 0%, #fff 50%, #e3ebf4 85.25%, #fff 95.75%, #fff 100%))
+	+box-shadow(inset 0 0 30px rgba(108, 153, 210, 0.56), 0 0 85px 15px #053c69)
+
 .push
 	height: 243px		
 
@@ -842,7 +846,10 @@ a
 				color: #fe7c00
 // footer
 .footer
+	max-width: 1280px
 	height: 243px
+	overflow: hidden
+	margin: 0 auto 
 	background: #f4f9ff
 	+g(#dfedff,#f4f9ff)
 .footer__topper
