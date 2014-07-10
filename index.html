@@ -21,7 +21,7 @@
 				</div>
 				<div class="header__right">
 					<div class="to-profile"><a href="#">Личный кабинет</a></div>
-					<div class="header__tools"><a href="#" class="header__link">войти</a> / <a href="#" class="header__link">зарегистрироваться</a></div>
+					<div class="header__tools"><a href="popup_login" class="header__link js-popup-link js-popup-enter-link">войти</a> / <a href="popup_login" class="header__link js-popup-link js-popup-register-link">зарегистрироваться</a></div>
 				</div>
 				<div class="header__mid">
 					<a href="#" class="logo">
@@ -1128,7 +1128,157 @@
 	</div>
 </footer>
 <!-- END footer -->
-
+<div class="overlay js-overlay" style="display:block">
+	<div class="popup popup_login js-popup js-popup-reg js-tab-group">
+		<ul class="tab-simle js-tab">
+			<li class="tab-simle__item is-active">
+				<a href="js-tab1"  class="tab-simle__link">Войти</a>
+			</li>
+			<li class="tab-simle__item">
+				<a href="js-tab2"  class="tab-simle__link">Зарегистрироваться</a>
+			</li>
+		</ul>
+		<div class="form tab-content js-tab-cont js-tab1" style="display:block">
+			<form class="js-validate-enter">
+				<div class="form__inner">
+					<div class="form__row">  
+						<div class="form__left">E-mail<span>*</span></div>
+						<div class="form__right">
+							<input type="email" class="input" name="email" required>
+						</div>
+					</div>
+					<div class="form__row has-password">  
+						<div class="form__left">Пароль<span>*</span></div>
+						<div class="form__right">
+							<input type="password" class="input" name="password" required>
+							<div class="form__opt">
+								<label class="checkbox">
+									<input type="checkbox">
+									<span>Запомнить меня</span>
+								</label>
+								<a href="#">Забыли пароль?</a>
+							</div>
+						</div>
+					</div>
+					<div class="form__submit">
+						<button type="submit" class="submit">Войти</button>
+					</div>
+				</div>
+				<div class="form__footer">
+					<div class="soc-enter">
+						<span>Войти через социальные сети:</span>
+						<a href="#" class="soc-enter__fb"></a>
+						<a href="#" class="soc-enter__vk"></a>
+					</div>	
+				</div>
+			</form>
+		</div>
+		<div class="form tab-content js-tab-cont js-tab2">
+			<form class="js-validate">
+				<div class="form__inner">
+					<div class="form__row">  
+						<div class="form__left">Имя<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="firstname" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Фамилия<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="lastname" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Отчество<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="fathername" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">E-mail<span>*</span></div>
+						<div class="form__right">
+							<input type="email" class="input" name="email"required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__left">Вид животного<span>*</span></div>
+						<div class="form__right">
+							<select class="select">
+								<option>Кот</option>
+								<option>Собаки</option>
+								<option>Грызуны</option>
+								<option>Хорьки</option>
+								<option>Рептилии</option>
+								<option>Птицы</option>
+							</select>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__left">Порода<span>*</span></div>
+						<div class="form__right">
+							<select class="select">
+								<option>Британский короткошерстный</option>
+								<option>Британский короткошерстный</option>
+								<option>Британский короткошерстный</option>
+								<option>Британский короткошерстный</option>
+								<option>Британский короткошерстный</option>
+								<option>Британский короткошерстный</option>
+							</select>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__left">Пол<span>*</span></div>
+						<div class="form__right">
+							<div class="radio-wrap">
+								<label class="radio">
+									<input type="radio" name="sex" checked>
+									<span>Самка</span>
+								</label>
+								<label class="radio">
+									<input type="radio" name="sex">
+									<span>Самец</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Кличка<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="alias" required>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__left">Договор с ОДО "Антистресс"<span>*</span></div>
+						<div class="form__right form__right_nobr">
+							<select class="select select_short select_shorter">
+							<option>Есть договор</option>
+							<option>Нет договора</option>
+						</select>
+						<span class="form__sep">-</span>
+						<input type="text" class="input input_short" placeholder="№ договора">
+						</div>
+					</div>
+					<div class="form__submit">
+						<button type="submit" class="submit">Войти</button>
+					</div>
+				</div>
+				<div class="form__footer">
+					<div class="info js-info">
+						<a href="#" class="info__question js-info-q"><span>Для чего мне нужен личный кабинет ?</span></a>
+						<div class="info__answer js-info-a" style="display: none;">
+							<ul>
+								<li>Информация о записях к врачу</li>
+								<li>Персональная анкета для каждого из ваших питомцев с возможностью завести амбулаторную карточку</li>
+								<li>Возможность участвовать в акциях, скидках, бонусах</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<button class="popup__close js-popup-close"></button>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>

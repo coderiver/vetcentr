@@ -85,6 +85,13 @@ head.ready(function() {
 
 // popups
 	$('.js-popup-link').on('click', function(event){
+		if($(this).hasClass('js-popup-register-link')){
+			$('.popup .js-tab .tab-simle__item:last-child a').trigger('click');
+		}
+		if($(this).hasClass('js-popup-enter-link')){
+			$('.popup .js-tab .tab-simle__item:first-child a').trigger('click');
+		}
+
 		$('.js-overlay').fadeOut(200);
 		var popup = $(this).attr('href');
 		$('html').addClass('has-open-popup');
