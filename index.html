@@ -16,7 +16,7 @@
 		<div class="l-center">
 			<div class="header__topper">
 				<div class="header__left">
-					<a href="#" class="subscribe"><span>Записаться на приём</span></a>
+					<a href="popup_feedback" class="subscribe js-popup-link"><span>Записаться на приём</span></a>
 					<div class="header__tools">или <a href="#" class="header__link">вызвать врача</a> на дом</div>
 				</div>
 				<div class="header__right">
@@ -1272,6 +1272,118 @@
 								<li>Возможность участвовать в акциях, скидках, бонусах</li>
 							</ul>
 						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<button class="popup__close js-popup-close"></button>
+	</div>
+</div>
+
+<div class="overlay js-overlay">
+	<div class="popup popup_feedback js-popup js-popup-feedback js-tab-group">
+		<ul class="tab-simle js-tab">
+			<li class="tab-simle__item is-active">
+				<a href="js-tab1"  class="tab-simle__link">Физическое лицо</a>
+			</li>
+			<li class="tab-simle__item">
+				<a href="js-tab2"  class="tab-simle__link">Юридическое лицо</a>
+			</li>
+		</ul>
+		<div class="form tab-content js-tab-cont js-tab1" style="display:block">
+			<form class="js-validate">
+				<div class="form__inner">
+					<div class="form__row">  
+						<div class="form__left">Имя<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="firstname" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Фамилия<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="lastname" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Отчество<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="fathername" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Адрес<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="address" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Место работы<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="workplace" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Текст обращения<span>*</span></div>
+						<div class="form__right">
+							<textarea class="input input_textarea" required name="message"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__left"></div>
+						<div class="form__right">
+							<button type="submit" class="submit">Войти</button>
+						</div>
+						
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="form tab-content js-tab-cont js-tab2">
+			<form class="js-validate">
+				<div class="form__inner">
+					<div class="form__row">  
+						<div class="form__left">Организация<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="workplace" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Адрес орагнизации<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="address" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Имя<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="firstname" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Фамилия<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="lastname" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Отчество<span>*</span></div>
+						<div class="form__right">
+							<input type="text" class="input" name="fathername" required>
+						</div>
+					</div>
+					<div class="form__row">  
+						<div class="form__left">Текст обращения<span>*</span></div>
+						<div class="form__right">
+							<textarea class="input input_textarea" required name="message"></textarea>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__left"></div>
+						<div class="form__right">
+							<button type="submit" class="submit">Войти</button>
+						</div>
+						
 					</div>
 				</div>
 			</form>
