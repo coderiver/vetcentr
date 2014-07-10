@@ -654,7 +654,7 @@
 									<input type="checkbox">
 									<span>Запомнить меня</span>
 								</label>
-								<a href="#">Забыли пароль?</a>
+								<a href="js-popup-pass" class="js-popup-link">Забыли пароль?</a>
 							</div>
 						</div>
 					</div>
@@ -770,6 +770,32 @@
 								<li>Возможность участвовать в акциях, скидках, бонусах</li>
 							</ul>
 						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<button class="popup__close js-popup-close"></button>
+	</div>
+</div>
+
+<div class="overlay js-overlay" style="display:block">
+	<div class="popup popup_login js-popup js-popup-pass">
+		<div class="popup__in">
+			<div class="popup__head">
+				<div class="popup__title">Восстановление пароля</div>
+				<div class="popup__info">На указанный вами e-mail будет выслана ссылка с указанием дальнейших действий</div>
+			</div>
+			<form class="js-validate">
+				<div class="field">
+					<div class="field__title">E-mail<span>*</span></div>
+					<div class="field__body">
+						<input type="email" class="input" name="email" required>
+					</div>
+				</div>
+				<div class="field field_btn">
+					<div class="field__title"></div>
+					<div class="field__body">
+						<button type="submit" class="submit">Отправить</button>
 					</div>
 				</div>
 			</form>
