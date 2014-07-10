@@ -462,4 +462,11 @@ head.ready(function() {
 		range_slider_to.html(range_slider_el.slider('values', 1) + ' ' + range_slider_currency);
 	};
 
+
+	$('.js-clone-workplace').click(function(event) {
+		event.preventDefault();
+		var _elementClone = $("#toclone div").clone(); 
+		$(".js-inserthere").append(_elementClone);
+	});
+
 });

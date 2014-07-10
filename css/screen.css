@@ -70,6 +70,8 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .form__row { display: table; width: 100%; margin-bottom: 32px; }
 .form__row.form__row_adress { margin-bottom: 16px; }
+.form__row.form__rowcloned .form__left { vertical-align: top; }
+.form__row.form__rowcloned .form__right div { margin-bottom: 3px; }
 
 .form__left { display: table-cell; vertical-align: middle; width: 100px; color: #253242; }
 .form__left span { color: #fd4052; }

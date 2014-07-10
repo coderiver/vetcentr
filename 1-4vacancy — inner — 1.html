@@ -381,13 +381,17 @@
 										</select>
 									</span>
 								</label>
-								<label class="form__row">  
+								<label class="form__row form__rowcloned">  
 									<span class="form__left">Предыдущее место работы, должность<span>*</span></span>
-									<span class="form__right">
-										<input type="text" class="input" required name="workplace">
-										<a href="#" class="link-add"><span>+ Добавить место работы</span></a>
-									</span>
+									<div class="form__right">
+										<div><input type="text" class="input" required name="workplace"></div>
+										<div class="js-inserthere"></div>
+										<a href="#" class="link-add js-clone-workplace"><span>+ Добавить место работы</span></a>
+									</div>
 								</label>
+								<div id="toclone" hidden>
+									<div><input type="text" class="input"  name="workplace"></div>
+								</div>
 								<label class="form__row">  
 									<span class="form__left">Семейное положение<span>*</span></span>
 									<span class="form__right">
