@@ -45,14 +45,11 @@
 .catalog__tabs-content
 	+clr
 	min-height: 300px
-.catalog__left
-	float: left
-	width: 190px
-.catalog__mid
-	float: left
-	width: 340px
-.catalog__right
-	float: left	 
+.catalog__list-m
+	-moz-column-count: 3
+	-moz-column-gap: 15px
+	-webkit-column-count: 3
+	-webkit-column-gap: 15px
 .catalog__tabs-list
 	+clr
 	display: inline-block 
@@ -146,9 +143,6 @@
 .catalog__sublist
 	&.is-wide
 		+clr
-		ul
-			float: left
-			width: 160px
 .catalog__phrase
 	float: right
 	padding-top: 30px
