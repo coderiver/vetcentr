@@ -413,8 +413,8 @@ a:hover { text-decoration: none; color: #d96a00; }
 .catalog__tabs-link.is-active { -webkit-box-shadow: 0 3px 5px -1px #efb20e; -moz-box-shadow: 0 3px 5px -1px #efb20e; box-shadow: 0 3px 5px -1px #efb20e; color: white; background: #f3b500; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e46000), color-stop(100%, #fbe400)); background-image: -webkit-linear-gradient(top, #e46000 0%, #fbe400 100%); background-image: -moz-linear-gradient(top, #e46000 0%, #fbe400 100%); background-image: -o-linear-gradient(top, #e46000 0%, #fbe400 100%); background-image: linear-gradient(top, #e46000 0%, #fbe400 100%); }
 .catalog__tabs-link.is-active span { text-shadow: 0 1px 1px #d38d00; border-bottom: 1px dotted transparent; }
 
-.catalog__link { position: relative; display: inline-block; margin-bottom: 8px; height: 27px; padding: 0 24px 0 10px; line-height: 27px; border-radius: 13px; color: #253242; text-decoration: none; font-family: "DirectCondensed", Arial, sans-serif; font-size: 18px; color: #253242; -webkit-transition: background 200ms; -moz-transition: background 200ms; -o-transition: background 200ms; transition: background 200ms; }
-.catalog__link:before { content: ""; position: absolute; top: 8px; right: 8px; background: url('../img/icons-s548d439337.png') 0 -804px no-repeat; width: 8px; height: 12px; }
+.catalog__link { position: relative; display: inline-block; margin-bottom: 8px; height: auto; line-height: 1.4; padding: 2px 24px 2px 10px; border-radius: 13px; color: #253242; text-decoration: none; font-family: "DirectCondensed", Arial, sans-serif; font-size: 18px; color: #253242; -webkit-transition: background 200ms; -moz-transition: background 200ms; -o-transition: background 200ms; transition: background 200ms; }
+.catalog__link:before { content: ""; position: absolute; top: 9px; right: 8px; background: url('../img/icons-s548d439337.png') 0 -804px no-repeat; width: 8px; height: 12px; }
 .catalog__link:hover { color: white; background: #e98500; }
 .catalog__link:hover:before { background: url('../img/icons-s548d439337.png') 0 -885px no-repeat; width: 8px; height: 12px; }
 
