@@ -421,12 +421,13 @@ head.ready(function() {
 
 			link.each(function(){
 				$(this).on('click', function(){
-					$(this).parent().find('.js-catalog').fadeIn();
+					$(this).parent().find('.js-catalog').fadeIn("200");
 					return false;
 				});	
 			});
 			close.on('click', function(){
-				$(this).parents('.js-catalog').fadeOut();
+				$(this).parents('.js-catalog').fadeOut("200");
+				return false;
 			});
 
 		}
