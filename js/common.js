@@ -364,7 +364,17 @@ head.ready(function() {
 		$(this).parents('.js-sitemap').hide();
 		return false;
 	});
+// scroll-pane
 
+	function scrollPane(){
+    if ($('.js-scroll-pane').length){
+      $('.js-scroll-pane').jScrollPane({
+        reinitialise: true
+      }); 
+    }
+  }
+	
+  scrollPane();
 // catalog tabs
 
 	if ($('.catalog__tabs').length) {
@@ -397,17 +407,7 @@ head.ready(function() {
 		CatalogTabs();
 	}
 
-// scroll-pane
 
-	function scrollPane(){
-    if ($('.js-scroll-pane').length){
-      $('.js-scroll-pane').jScrollPane({
-        reinitialise: true
-      }); 
-    }
-  }
-	
-  scrollPane();
 
 // catalog popup
 	
