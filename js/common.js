@@ -421,7 +421,7 @@ head.ready(function() {
 
 			link.each(function(){
 				$(this).on('click', function(){
-					$(this).parent().find('.js-catalog').fadeIn("200");
+					$(this).parent().children('.js-catalog').fadeIn("200");
 					return false;
 				});	
 			});
