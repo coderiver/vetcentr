@@ -470,4 +470,14 @@ head.ready(function() {
 		$(".js-inserthere").append(_elementClone);
 	});
 
+	$('.m-services__link').click(function(event) {
+		event.preventDefault();
+		$('.m-services__link').removeClass('is-active');
+		idd = $(this).attr('href');
+		idd = idd.substring(1);
+		$('.m-services__content').hide();
+		$('#'+idd).show();
+		$(this).addClass('is-active')
+	});
+
 });

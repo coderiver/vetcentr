@@ -285,8 +285,8 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .m-services__link { display: block; padding: 3px 14px; font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 13px; color: #253242; }
 .m-services__link span { display: inline-block; border-bottom: 1px dotted; }
-.m-services__link:hover { color: white; background: #e98500; }
-.m-services__link:hover span { border-bottom-color: #e98500; }
+.m-services__link:hover, .m-services__link.is-active { color: white; background: #e98500; }
+.m-services__link:hover span, .m-services__link.is-active span { border-bottom-color: #e98500; }
 
 .m-services__content { position: relative; padding: 0 140px 90px; }
 
