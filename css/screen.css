@@ -290,7 +290,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .m-services__content { position: relative; padding: 0 140px 90px; }
 
-.m-services__img { position: absolute; bottom: 0; right: 25px; }
+.m-services__img { position: absolute; bottom: 0; right: 25px; height: 100%; width: 100%; overflow: hidden; }
 
 .m-services__list { width: 100%; -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; column-width: 25%; position: relative; z-index: 20; }
 
