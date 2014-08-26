@@ -271,7 +271,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .sitemap__link { font-size: 14px; color: #253242; }
 
-.m-servces__topper { padding-left: 140px; *zoom: 1; margin-bottom: 50px; }
+.m-servces__topper { padding-left: 140px; position: relative; z-index: 20; *zoom: 1; margin-bottom: 50px; }
 .m-servces__topper:after { content: " "; display: table; clear: both; }
 
 .m-servces__left { float: left; width: 200px; font-family: "DirectSemiCondencedBold", Arial, sans-serif; font-size: 18px; color: #253242; }
@@ -292,7 +292,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .m-services__img { position: absolute; bottom: 0; right: 25px; }
 
-.m-services__list { width: 100%; -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; column-width: 25%; }
+.m-services__list { width: 100%; -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; column-width: 25%; position: relative; z-index: 20; }
 
 .m-services__block { margin-bottom: 10px; }
 .m-services__block ul { margin-bottom: 38px; }
