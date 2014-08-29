@@ -297,6 +297,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 .m-services__block { margin-bottom: 10px; }
 .m-services__block ul { margin-bottom: 38px; }
 .m-services__block ul li { margin-bottom: 10px; }
+.m-services__block ul li a { display: inline-block; }
 
 .m-services__type { display: inline-block; font-size: 14px; color: #253242; margin-bottom: 10px; }
 
@@ -1451,7 +1452,7 @@ label.is-error { position: absolute; top: -16px; left: 0; color: #fd4052; }
 .aside-nav ul ul ul li a:hover { color: #d96a00; }
 
 .links { margin-bottom: 55px; -webkit-column-count: 4; -moz-column-count: 4; -ms-column-count: 4; -o-column-count: 4; column-count: 4; -webkit-column-gap: 40px; -moz-column-gap: 40px; -ms-column-gap: 40px; -o-column-gap: 40px; column-gap: 40px; font-size: 14px; line-height: 2.1; }
-.links a { color: #182e41; }
+.links a { color: #182e41; display: inline-block; }
 .links a:hover { color: #d96a00; }
 .links ul { font-size: 12px; line-height: 2; }
 .links ul a { color: #006db8; }
