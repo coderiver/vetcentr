@@ -150,6 +150,11 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .radio-wrap { font-size: 0; }
 
+.radios { list-style: none; text-align: center; font-size: 0; vertical-align: top; }
+.radios .radio-wrap { margin-bottom: 22px; }
+.radios .radio { width: 100%; }
+.radios li { display: inline-block; width: 250px; margin: 0 40px; }
+
 .radio { display: inline-block; width: 50%; vertical-align: middle; cursor: pointer; }
 .radio input, .radio span { display: inline-block; vertical-align: middle; }
 .radio span { padding-left: 10px; font-size: 12px; color: #253242; }
