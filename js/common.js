@@ -469,7 +469,12 @@ head.ready(function() {
 		var _elementClone = $("#toclone div").clone(); 
 		$(".js-inserthere").append(_elementClone);
 	});
-
+	$('.js-clone-workplace').click(function(event) {
+		event.preventDefault();
+		var el = $(this).attr("data-hidden");
+		var _elementClone = $("."+el).children().clone(); 
+		$(this).parents(".js-add-btn-wrap").find(".js-inserthere").append(_elementClone);
+	});
 	$('.m-services__link').click(function(event) {
 		event.preventDefault();
 		$('.m-services__link').removeClass('is-active');
@@ -478,6 +483,13 @@ head.ready(function() {
 		$('.m-services__content').hide();
 		$('#'+idd).show();
 		$(this).addClass('is-active')
+	});
+
+
+	$("body").on("click",".js-add-file",function(){
+		$(this).parent().find(".js-hidden-file-btn").trigger("click");
+		
+		return false;
 	});
 
 });
