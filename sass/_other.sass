@@ -35,7 +35,7 @@ $cl: #253242
 		+clr
 	.about__doctor
 		position: relative
-		float: left
+		float: left 
 		margin: 0 50px 30px 0
 		&:before
 			content: ""
@@ -863,13 +863,15 @@ $cl: #253242
 				background: #faf4ca
 				color: #D3740E 
 				text-decoration: none
-				cursor: default
 				&:after
 					content: ""
 					position: absolute
 					top: 8px
 					right: 8px
 					+arr(5,4,#d3740e,b)
+				&:hover
+					&:after
+						+arr(5,4,#d3740e,t)
 				
 .ad
 	margin-bottom: 40px
