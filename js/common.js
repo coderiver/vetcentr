@@ -445,8 +445,8 @@ head.ready(function() {
 	// jquery ui slider
 	var range_slider = $('.js-range-slider'),
 			range_slider_el = range_slider.find('.range__el'),
-			range_slider_from = range_slider.find('.range__from'),
-			range_slider_to = range_slider.find('.range__to'),
+			range_slider_from = range_slider.find('.range__from input'),
+			range_slider_to = range_slider.find('.range__to input'),
 			range_slider_currency = range_slider.data('currency');
 	if (range_slider.length) {
 		range_slider_el.slider({
@@ -455,12 +455,12 @@ head.ready(function() {
 			max: 500,
 			values: [ 75, 300 ],
 			slide: function( event, ui ) {
-			  range_slider_from.html(ui.values[0] + ' ' + range_slider_currency);
-			  range_slider_to.html(ui.values[1] + ' ' + range_slider_currency);
+			  range_slider_from.val(ui.values[0]);
+			  range_slider_to.val(ui.values[1]);
 			}
 		});
-		range_slider_from.html(range_slider_el.slider('values', 0) + ' ' + range_slider_currency);
-		range_slider_to.html(range_slider_el.slider('values', 1) + ' ' + range_slider_currency);
+		range_slider_from.val(range_slider_el.slider('values', 0));
+		range_slider_to.val(range_slider_el.slider('values', 1));
 	};
 
 

@@ -859,7 +859,7 @@ $cl: #253242
 			padding: 3px 20px 3px 10px
 			border-radius: 3px
 			color: $cl 
-			&.is-active
+			&.is-down, &.is-top
 				background: #faf4ca
 				color: #D3740E 
 				text-decoration: none
@@ -868,10 +868,12 @@ $cl: #253242
 					position: absolute
 					top: 8px
 					right: 8px
+			&.is-down
+				&:after
 					+arr(5,4,#d3740e,b)
-				&:hover
-					&:after
-						+arr(5,4,#d3740e,t)
+			&.is-top
+				&:after
+					+arr(5,4,#d3740e,t)
 				
 .ad
 	margin-bottom: 40px
@@ -1031,6 +1033,12 @@ $cl: #253242
 		width: 50%
 		vertical-align: top
 		font-size: 12px
+		input, span
+			display: inline-block
+			vertical-align: middle
+		input
+			width: 40px 
+			text-align: center
 	.range__to
 		text-align: right
 	.ui-slider-range
