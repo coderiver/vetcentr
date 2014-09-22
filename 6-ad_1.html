@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>6 ad 1</title>
 	<meta name="viewport" content="initial-scale=1"/>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -325,10 +325,10 @@
 						<div class="form__left">Цена:</div>
 						<div class="form__right">
 							<!-- range -->
-							<div class="range js-range-slider" data-currency="y.e.">
+							<div class="range js-range-slider">
 								<div class="range__values">
-									<div class="range__from"></div>
-									<div class="range__to"></div>
+									<div class="range__from"><input type="text" readonly="" maxlength="5"><span>y.e.</span></div>
+									<div class="range__to"><input type="text" readonly="" maxlength="5"><span>y.e.</span></div>
 								</div>
 								<div class="range__el"></div>
 							</div>
@@ -436,7 +436,8 @@
 				<div class="sort">
 					<div class="sort__title">Сортировать:</div>
 					<div class="sort__list">
-						<a class="is-active" href="#">цена</a>
+						<a class="is-down" href="#">цена</a>
+						<a class="is-top" href="#">цена</a>
 						<a href="#">дата</a>
 					</div>
 				</div>

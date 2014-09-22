@@ -133,6 +133,10 @@
     font-size: 12px
     p
         margin-bottom: 20px
+.white
+    background: white
+.contentpane
+    width: 600px
 .popup_notice
     width: 600px    
 .title_notice
@@ -314,3 +318,21 @@
         width: 294px     
     .input_textarea
         height: 60px    
+
+@media print
+    .popup-open, .overlay
+        background: white
+        .out, .footer
+            display: none
+            visibility: hidden
+    .popup-open
+        .overlay
+            position: static
+            bottom: auto
+            top: auto
+            left: auto
+            right: auto
+            display: block
+            text-align: left
+        .popup_notice
+            width: 100%
