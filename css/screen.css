@@ -650,7 +650,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 .services .services__all:before { content: "+"; position: absolute; top: 0; left: -10px; }
 .services .services__all.is-active:before { content: "-"; }
 .services .services__column { float: left; width: 30%; margin-right: 3%; }
-.services .services__item { display: inline-block; margin-bottom: 40px; vertical-align: top; }
+.services .services__item { float: left; width: 30%; margin-right: 3%; margin-bottom: 40px; vertical-align: top; }
 .services .services__item.is-active .services__title i { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .services .services__title { font-size: 0; cursor: pointer; }
 .services .services__title span, .services .services__title i { display: inline-block; vertical-align: middle; }
