@@ -422,6 +422,9 @@ head.ready(function() {
 			link.each(function(){
 				$(this).on('click', function(){
 					$(this).parent().children('.js-catalog').fadeIn("200");
+					$('.js-scroll-pane').jScrollPane({
+				        reinitialise: true
+				      }); 
 					return false;
 				});	
 			});

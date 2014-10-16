@@ -653,9 +653,9 @@ a:hover { text-decoration: none; color: #d96a00; }
 .services .services__item { float: left; width: 30%; margin-right: 3%; margin-bottom: 40px; vertical-align: top; }
 .services .services__item.is-active .services__title i { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .services .services__title { font-size: 0; cursor: pointer; }
-.services .services__title span, .services .services__title i { display: inline-block; vertical-align: middle; }
+.services .services__title span, .services .services__title i { vertical-align: middle; }
 .services .services__title span { border-bottom: 1px dotted; font-family: "DirectCondensed", Arial, sans-serif; font-size: 20px; line-height: 1.1; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
-.services .services__title i { margin-left: 10px; -moz-transition: -moz-transform 0.2s; -o-transition: -o-transform 0.2s; -webkit-transition: -webkit-transform 0.2s; transition: transform 0.2s; background: url('../img/icons-s791f5d72c1.png') 0 -1740px no-repeat; width: 8px; height: 5px; }
+.services .services__title i { margin-left: 10px; display: inline-block; -moz-transition: -moz-transform 0.2s; -o-transition: -o-transform 0.2s; -webkit-transition: -webkit-transform 0.2s; transition: transform 0.2s; background: url('../img/icons-s791f5d72c1.png') 0 -1740px no-repeat; width: 8px; height: 5px; }
 .services .services__title:hover span { color: #e98500; }
 .services .services__title:hover i { background: url('../img/icons-s791f5d72c1.png') 0 -1725px no-repeat; width: 8px; height: 5px; }
 .services .services__list { display: none; padding: 5px 0 0 10px; }
