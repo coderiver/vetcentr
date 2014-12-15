@@ -143,6 +143,7 @@ a:hover { text-decoration: none; color: #d96a00; }
 
 .select { width: 100%; }
 .select.select_short { width: 133px; }
+.select.is-error { border-color: red; }
 .select + .input { margin-top: 20px; }
 
 .radio-wrap { font-size: 0; }
